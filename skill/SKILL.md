@@ -23,7 +23,7 @@ The local Windows task `RelayResaleScrape` is disabled on purpose; running it wo
 
 ## Steps
 
-1. **Sync down.** `Artifact` action `read`, url above, `paths`: `["data.json", "data/history.jsonl", "src/sources.json", "src/scrape.py", "src/index.html.txt"]`. Copy each saved file over its local counterpart (table above). If the cloud routine changed nothing you care about, this is still required: the publish in step 5 overwrites everything.
+1. **Sync down.** First `Artifact` action `read` with just the url (no path), so the live page counts as viewed; publishing is refused otherwise. Then `read` with the url and `paths`: `["data.json", "data/history.jsonl", "src/sources.json", "src/scrape.py", "src/index.html.txt"]`. Copy each saved file over its local counterpart (table above). If the cloud routine changed nothing you care about, this is still required: the publish in step 5 overwrites everything.
 
 2. **Scrape** (optional; the routine does this weekly). `python -X utf8 scrape.py` in the project folder. Read every line.
    - `FAIL`: the site changed or blocked the request. Fetch the page, find where the number moved, fix the matching `parse_*` function in `scrape.py`, and rerun. Respect robots.txt and keep the delay; never switch to a site's private API.

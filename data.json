@@ -1,0 +1,3242 @@
+{
+ "generated": "2026-09-27T13:16+08:00",
+ "items": [
+  {
+   "id": "birkin25",
+   "sec": "bag",
+   "brand": "Hermès",
+   "zhb": "爱马仕",
+   "name": "Birkin 25, Togo",
+   "zh": "Birkin 25 Togo 皮",
+   "source": "manual",
+   "type": "ask",
+   "retail": 13500,
+   "mid": 23995,
+   "lo": 18995,
+   "hi": 26250,
+   "n": 19,
+   "src": [
+    "BagUSeek · Fashionphile asks",
+    "https://baguseek.com/hermes-birkin-price-guide-2026"
+   ],
+   "note": {
+    "en": "Median of 19 standard-leather listings on Fashionphile. Sotheby’s puts pristine Togo 25s at $28–30k.",
+    "zh": "Fashionphile 上 19 个常规皮 Birkin 25 挂牌价的中位数。苏富比称全新品相的 Togo 25 成交约 2.8–3 万美元。"
+   },
+   "asof": "2026-07-22",
+   "auto": false,
+   "ret": 1.7774,
+   "history": []
+  },
+  {
+   "id": "kelly25",
+   "sec": "bag",
+   "brand": "Hermès",
+   "zhb": "爱马仕",
+   "name": "Kelly 25, classic leather",
+   "zh": "Kelly 25 常规皮",
+   "source": "manual",
+   "type": "est",
+   "retail": 13700,
+   "mid": 23000,
+   "lo": 15000,
+   "hi": 32000,
+   "src": [
+    "PurseBop Kelly Price Guide 2026",
+    "https://www.pursebop.com/the-hermes-kelly-price-guide-2026/"
+   ],
+   "note": {
+    "en": "Guides cite $20–26k for pristine or excellent classic-leather Kelly 25s; the typical figure is that band’s midpoint. Pristine Sellier reaches $26–32k.",
+    "zh": "多份指南给出全新/极好品相 Kelly 25 的价位为 2–2.6 万美元，典型价取中值。全新外缝款可达 2.6–3.2 万美元。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 1.6788,
+   "history": []
+  },
+  {
+   "id": "cfmed",
+   "sec": "bag",
+   "brand": "Chanel",
+   "zhb": "香奈儿",
+   "name": "Classic Flap",
+   "zh": "Classic Flap",
+   "source": "purr",
+   "src": [
+    "Purr · Chanel Classic Flap",
+    "https://www.bypurr.com/bags/chanel/classic-flap"
+   ],
+   "note": {
+    "en": "All sizes and materials. Listings are mostly vintage, which drags the median down; recent flaps in excellent condition trade 15–30% below retail.",
+    "zh": "涵盖全部尺寸和材质。样本以中古为主，拉低了中位价；近年款极好品相通常比公价低 15–30%。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 5750,
+   "lo": 4000,
+   "hi": 6900,
+   "n": 477,
+   "chg": null,
+   "retail": 11950,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.4812,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 5750
+    }
+   ]
+  },
+  {
+   "id": "neverfull",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Neverfull",
+   "zh": "Neverfull",
+   "source": "purr",
+   "src": [
+    "Purr · LV Neverfull",
+    "https://www.bypurr.com/bags/louis-vuitton/neverfull"
+   ],
+   "note": {
+    "en": "All sizes combined.",
+    "zh": "全部尺寸合并统计。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2310,
+   "lo": 1895,
+   "hi": 2995,
+   "n": 211,
+   "chg": null,
+   "retail": 2700,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.8556,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2310
+    }
+   ]
+  },
+  {
+   "id": "stlouis",
+   "sec": "bag",
+   "brand": "Goyard",
+   "zhb": "戈雅",
+   "name": "Saint Louis",
+   "zh": "Saint Louis 托特",
+   "source": "purr",
+   "src": [
+    "Purr · Goyard Saint Louis",
+    "https://www.bypurr.com/bags/goyard/saint-louis"
+   ],
+   "note": {
+    "en": "Trades daily. Classic colours hold value better than seasonal shades.",
+    "zh": "每天都有成交，经典色比季节色更保值。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2500,
+   "lo": 1733.69,
+   "hi": 3000,
+   "n": 120,
+   "chg": null,
+   "retail": 2950,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.8475,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2500
+    }
+   ]
+  },
+  {
+   "id": "ladydior",
+   "sec": "bag",
+   "brand": "Dior",
+   "zhb": "迪奥",
+   "name": "Lady Dior",
+   "zh": "Lady Dior 戴妃包",
+   "source": "purr",
+   "src": [
+    "Purr · Lady Dior",
+    "https://www.bypurr.com/bags/dior/lady-dior"
+   ],
+   "note": {
+    "en": "The source publishes a median only, with no range or sample size.",
+    "zh": "来源只公布了中位价，没有价格区间和样本量。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2650,
+   "lo": null,
+   "hi": null,
+   "n": null,
+   "chg": null,
+   "retail": 4800,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.5521,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2650
+    }
+   ]
+  },
+  {
+   "id": "margaux",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Margaux",
+   "zh": "Margaux 托特",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Margaux",
+    "https://www.bypurr.com/bags/the-row/margaux"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4919,
+   "lo": 4230,
+   "hi": 6135,
+   "n": 163,
+   "chg": null,
+   "retail": 4500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0931,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4919
+    }
+   ]
+  },
+  {
+   "id": "gucci-sukey",
+   "sec": "bag",
+   "brand": "Gucci",
+   "zhb": "古驰",
+   "name": "Sukey",
+   "zh": "Sukey",
+   "source": "purr",
+   "src": [
+    "Purr · Gucci Sukey",
+    "https://www.bypurr.com/bags/gucci/sukey"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 681,
+   "lo": 500,
+   "hi": 880,
+   "n": 38,
+   "chg": null,
+   "retail": 650,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0477,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 681
+    }
+   ]
+  },
+  {
+   "id": "celine-cabas-thais",
+   "sec": "bag",
+   "brand": "Celine",
+   "zhb": "思琳",
+   "name": "Cabas Thais",
+   "zh": "Cabas Thais",
+   "source": "purr",
+   "src": [
+    "Purr · Celine Cabas Thais",
+    "https://www.bypurr.com/bags/celine/cabas-thais"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1493,
+   "lo": 1228,
+   "hi": 1987,
+   "n": 38,
+   "chg": null,
+   "retail": 1400,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0664,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1493
+    }
+   ]
+  },
+  {
+   "id": "celine-luggage",
+   "sec": "bag",
+   "brand": "Celine",
+   "zhb": "思琳",
+   "name": "Luggage",
+   "zh": "Luggage",
+   "source": "purr",
+   "src": [
+    "Purr · Celine Luggage",
+    "https://www.bypurr.com/bags/celine/luggage"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1185,
+   "lo": 900,
+   "hi": 2656,
+   "n": 124,
+   "chg": null,
+   "retail": 3450,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.3435,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1185
+    }
+   ]
+  },
+  {
+   "id": "fendi-baguette",
+   "sec": "bag",
+   "brand": "Fendi",
+   "zhb": "芬迪",
+   "name": "Baguette",
+   "zh": "Baguette",
+   "source": "purr",
+   "src": [
+    "Purr · Fendi Baguette",
+    "https://www.bypurr.com/bags/fendi/baguette"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3100,
+   "lo": 2160,
+   "hi": 3900,
+   "n": 234,
+   "chg": null,
+   "retail": 3250,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9538,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3100
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-hudson",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Hudson",
+   "zh": "Hudson",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Hudson",
+    "https://www.bypurr.com/bags/louis-vuitton/hudson"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1100,
+   "lo": 858.75,
+   "hi": 1584,
+   "n": 98,
+   "chg": null,
+   "retail": 1850,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.5946,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1100
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-bo-te-chapeaux-petite",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Boîte Chapeaux Petite",
+   "zh": "Boîte Chapeaux Petite",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Boîte Chapeaux Petite",
+    "https://www.bypurr.com/bags/louis-vuitton/bo-te-chapeaux-petite"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2228,
+   "lo": 1737,
+   "hi": 3200,
+   "n": 66,
+   "chg": null,
+   "retail": 6700,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.3325,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2228
+    }
+   ]
+  },
+  {
+   "id": "loewe-amazona-180",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Amazona 180",
+   "zh": "Amazona 180",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Amazona 180",
+    "https://www.bypurr.com/bags/loewe/amazona-180"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4550,
+   "lo": 3427.14,
+   "hi": 5300,
+   "n": 97,
+   "chg": null,
+   "retail": 4900,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9286,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4550
+    }
+   ]
+  },
+  {
+   "id": "loewe-bracelet-pouch",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Bracelet Pouch",
+   "zh": "Bracelet Pouch",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Bracelet Pouch",
+    "https://www.bypurr.com/bags/loewe/bracelet-pouch"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1742,
+   "lo": 1072,
+   "hi": 2203,
+   "n": 69,
+   "chg": null,
+   "retail": 2000,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.871,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1742
+    }
+   ]
+  },
+  {
+   "id": "gucci-bardot",
+   "sec": "bag",
+   "brand": "Gucci",
+   "zhb": "古驰",
+   "name": "Bardot",
+   "zh": "Bardot",
+   "source": "purr",
+   "src": [
+    "Purr · Gucci Bardot",
+    "https://www.bypurr.com/bags/gucci/bardot"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 637,
+   "lo": 500,
+   "hi": 967.5,
+   "n": 99,
+   "chg": null,
+   "retail": 650,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.98,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 637
+    }
+   ]
+  },
+  {
+   "id": "fendi-spy",
+   "sec": "bag",
+   "brand": "Fendi",
+   "zhb": "芬迪",
+   "name": "Spy",
+   "zh": "Spy",
+   "source": "purr",
+   "src": [
+    "Purr · Fendi Spy",
+    "https://www.bypurr.com/bags/fendi/spy"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1100,
+   "lo": 708,
+   "hi": 1395,
+   "n": 94,
+   "chg": null,
+   "retail": 2800,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.3929,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1100
+    }
+   ]
+  },
+  {
+   "id": "gucci-bamboo-1947",
+   "sec": "bag",
+   "brand": "Gucci",
+   "zhb": "古驰",
+   "name": "Bamboo 1947",
+   "zh": "Bamboo 1947",
+   "source": "purr",
+   "src": [
+    "Purr · Gucci Bamboo 1947",
+    "https://www.bypurr.com/bags/gucci/bamboo-1947"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2108,
+   "lo": 1396.61,
+   "hi": 2720,
+   "n": 122,
+   "chg": null,
+   "retail": 2450,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.8604,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2108
+    }
+   ]
+  },
+  {
+   "id": "prada-aimee",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Aimee",
+   "zh": "Aimee",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Aimee",
+    "https://www.bypurr.com/bags/prada/aimee"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3450,
+   "lo": 2930,
+   "hi": 3792,
+   "n": 97,
+   "chg": null,
+   "retail": 3450,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3450
+    }
+   ]
+  },
+  {
+   "id": "goyard-bellechasse",
+   "sec": "bag",
+   "brand": "Goyard",
+   "zhb": "戈雅",
+   "name": "Bellechasse",
+   "zh": "Bellechasse",
+   "source": "purr",
+   "src": [
+    "Purr · Goyard Bellechasse",
+    "https://www.bypurr.com/bags/goyard/bellechasse"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2941,
+   "lo": 2656.25,
+   "hi": 3179,
+   "n": 151,
+   "chg": null,
+   "retail": 2850,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0319,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2941
+    }
+   ]
+  },
+  {
+   "id": "the-row-marlo",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Marlo",
+   "zh": "Marlo",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Marlo",
+    "https://www.bypurr.com/bags/the-row/marlo"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4874,
+   "lo": 3600,
+   "hi": 5320,
+   "n": 101,
+   "chg": null,
+   "retail": 4250,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.1468,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4874
+    }
+   ]
+  },
+  {
+   "id": "the-row-park",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Park",
+   "zh": "Park",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Park",
+    "https://www.bypurr.com/bags/the-row/park"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1895,
+   "lo": 1620,
+   "hi": 2550,
+   "n": 129,
+   "chg": null,
+   "retail": 2000,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9475,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1895
+    }
+   ]
+  },
+  {
+   "id": "the-row-izzy",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Izzy",
+   "zh": "Izzy",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Izzy",
+    "https://www.bypurr.com/bags/the-row/izzy"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2300,
+   "lo": 2100,
+   "hi": 2635,
+   "n": 30,
+   "chg": null,
+   "retail": 2500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.92,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2300
+    }
+   ]
+  },
+  {
+   "id": "prada-triangle",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Triangle",
+   "zh": "Triangle",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Triangle",
+    "https://www.bypurr.com/bags/prada/triangle"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1195,
+   "lo": 603.9,
+   "hi": 1995,
+   "n": 121,
+   "chg": null,
+   "retail": 2700,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.4426,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1195
+    }
+   ]
+  },
+  {
+   "id": "fendi-selleria",
+   "sec": "bag",
+   "brand": "Fendi",
+   "zhb": "芬迪",
+   "name": "Selleria",
+   "zh": "Selleria",
+   "source": "purr",
+   "src": [
+    "Purr · Fendi Selleria",
+    "https://www.bypurr.com/bags/fendi/selleria"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 699,
+   "lo": 557,
+   "hi": 2025.77,
+   "n": 124,
+   "chg": null,
+   "retail": 2100,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.3329,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 699
+    }
+   ]
+  },
+  {
+   "id": "bottega-veneta-parachute",
+   "sec": "bag",
+   "brand": "Bottega Veneta",
+   "zhb": "葆蝶家",
+   "name": "Parachute",
+   "zh": "Parachute",
+   "source": "purr",
+   "src": [
+    "Purr · Bottega Veneta Parachute",
+    "https://www.bypurr.com/bags/bottega-veneta/parachute"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4555,
+   "lo": 3040,
+   "hi": 5500,
+   "n": 125,
+   "chg": null,
+   "retail": 4600,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9902,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4555
+    }
+   ]
+  },
+  {
+   "id": "bottega-veneta-bang-bang",
+   "sec": "bag",
+   "brand": "Bottega Veneta",
+   "zhb": "葆蝶家",
+   "name": "Bang Bang",
+   "zh": "Bang Bang",
+   "source": "purr",
+   "src": [
+    "Purr · Bottega Veneta Bang Bang",
+    "https://www.bypurr.com/bags/bottega-veneta/bang-bang"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3300,
+   "lo": 2850,
+   "hi": 3300,
+   "n": 121,
+   "chg": null,
+   "retail": 3300,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3300
+    }
+   ]
+  },
+  {
+   "id": "bottega-veneta-barbara",
+   "sec": "bag",
+   "brand": "Bottega Veneta",
+   "zhb": "葆蝶家",
+   "name": "Barbara",
+   "zh": "Barbara",
+   "source": "purr",
+   "src": [
+    "Purr · Bottega Veneta Barbara",
+    "https://www.bypurr.com/bags/bottega-veneta/barbara"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 5200,
+   "lo": 4950,
+   "hi": 7900,
+   "n": 26,
+   "chg": null,
+   "retail": 5900,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.8814,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 5200
+    }
+   ]
+  },
+  {
+   "id": "celine-triomphe-besace",
+   "sec": "bag",
+   "brand": "Celine",
+   "zhb": "思琳",
+   "name": "Triomphe Besace",
+   "zh": "Triomphe Besace",
+   "source": "purr",
+   "src": [
+    "Purr · Celine Triomphe Besace",
+    "https://www.bypurr.com/bags/celine/triomphe-besace"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2298,
+   "lo": 1908.25,
+   "hi": 3080,
+   "n": 151,
+   "chg": null,
+   "retail": 2050,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.121,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2298
+    }
+   ]
+  },
+  {
+   "id": "dior-saddle",
+   "sec": "bag",
+   "brand": "Dior",
+   "zhb": "迪奥",
+   "name": "Saddle",
+   "zh": "Saddle",
+   "source": "purr",
+   "src": [
+    "Purr · Dior Saddle",
+    "https://www.bypurr.com/bags/dior/saddle"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2500,
+   "lo": 1938,
+   "hi": 3900,
+   "n": 211,
+   "chg": null,
+   "retail": 3200,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7812,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2500
+    }
+   ]
+  },
+  {
+   "id": "the-row-peggy",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Peggy",
+   "zh": "Peggy",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Peggy",
+    "https://www.bypurr.com/bags/the-row/peggy"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2786,
+   "lo": 2630.75,
+   "hi": 3950,
+   "n": 27,
+   "chg": null,
+   "retail": 3000,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9287,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2786
+    }
+   ]
+  },
+  {
+   "id": "bottega-veneta-veneta",
+   "sec": "bag",
+   "brand": "Bottega Veneta",
+   "zhb": "葆蝶家",
+   "name": "Veneta",
+   "zh": "Veneta",
+   "source": "purr",
+   "src": [
+    "Purr · Bottega Veneta Veneta",
+    "https://www.bypurr.com/bags/bottega-veneta/veneta"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3569,
+   "lo": 1700,
+   "hi": 6049,
+   "n": 64,
+   "chg": null,
+   "retail": 4300,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.83,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3569
+    }
+   ]
+  },
+  {
+   "id": "dior-street-chic",
+   "sec": "bag",
+   "brand": "Dior",
+   "zhb": "迪奥",
+   "name": "Street Chic",
+   "zh": "Street Chic",
+   "source": "purr",
+   "src": [
+    "Purr · Dior Street Chic",
+    "https://www.bypurr.com/bags/dior/street-chic"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1125,
+   "lo": 808.22,
+   "hi": 1531,
+   "n": 33,
+   "chg": null,
+   "retail": 1150,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9783,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1125
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-multi-pochette-accessoires",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Multi Pochette Accessoires",
+   "zh": "Multi Pochette Accessoires",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Multi Pochette Accessoires",
+    "https://www.bypurr.com/bags/louis-vuitton/multi-pochette-accessoires"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2199,
+   "lo": 1595,
+   "hi": 2750,
+   "n": 38,
+   "chg": null,
+   "retail": 2840,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7743,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2199
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-carryall",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Carryall",
+   "zh": "Carryall",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Carryall",
+    "https://www.bypurr.com/bags/louis-vuitton/carryall"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3350,
+   "lo": 2825,
+   "hi": 3716.68,
+   "n": 169,
+   "chg": null,
+   "retail": 3450,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.971,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3350
+    }
+   ]
+  },
+  {
+   "id": "balenciaga-clicca",
+   "sec": "bag",
+   "brand": "Balenciaga",
+   "zhb": "巴黎世家",
+   "name": "Clicca",
+   "zh": "Clicca",
+   "source": "purr",
+   "src": [
+    "Purr · Balenciaga Clicca",
+    "https://www.bypurr.com/bags/balenciaga/clicca"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2950,
+   "lo": 2485.85,
+   "hi": 3250,
+   "n": 33,
+   "chg": null,
+   "retail": 3150,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9365,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2950
+    }
+   ]
+  },
+  {
+   "id": "prada-explore",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Explore",
+   "zh": "Explore",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Explore",
+    "https://www.bypurr.com/bags/prada/explore"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3500,
+   "lo": 2600,
+   "hi": 3850,
+   "n": 37,
+   "chg": null,
+   "retail": 3400,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0294,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3500
+    }
+   ]
+  },
+  {
+   "id": "celine-ava-hobo",
+   "sec": "bag",
+   "brand": "Celine",
+   "zhb": "思琳",
+   "name": "Ava Hobo",
+   "zh": "Ava Hobo",
+   "source": "purr",
+   "src": [
+    "Purr · Celine Ava Hobo",
+    "https://www.bypurr.com/bags/celine/ava-hobo"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1275,
+   "lo": 952,
+   "hi": 1720,
+   "n": 38,
+   "chg": null,
+   "retail": 2600,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.4904,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1275
+    }
+   ]
+  },
+  {
+   "id": "loewe-flamenco",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Flamenco",
+   "zh": "Flamenco",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Flamenco",
+    "https://www.bypurr.com/bags/loewe/flamenco"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2700,
+   "lo": 1638,
+   "hi": 3990,
+   "n": 98,
+   "chg": null,
+   "retail": 3900,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.6923,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2700
+    }
+   ]
+  },
+  {
+   "id": "bottega-veneta-hop",
+   "sec": "bag",
+   "brand": "Bottega Veneta",
+   "zhb": "葆蝶家",
+   "name": "Hop",
+   "zh": "Hop",
+   "source": "purr",
+   "src": [
+    "Purr · Bottega Veneta Hop",
+    "https://www.bypurr.com/bags/bottega-veneta/hop"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4244,
+   "lo": 3542,
+   "hi": 4603.5,
+   "n": 61,
+   "chg": null,
+   "retail": 3900,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0882,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4244
+    }
+   ]
+  },
+  {
+   "id": "celine-romy",
+   "sec": "bag",
+   "brand": "Celine",
+   "zhb": "思琳",
+   "name": "Romy",
+   "zh": "Romy",
+   "source": "purr",
+   "src": [
+    "Purr · Celine Romy",
+    "https://www.bypurr.com/bags/celine/romy"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1540,
+   "lo": 1075,
+   "hi": 2295,
+   "n": 31,
+   "chg": null,
+   "retail": 1950,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7897,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1540
+    }
+   ]
+  },
+  {
+   "id": "celine-ava",
+   "sec": "bag",
+   "brand": "Celine",
+   "zhb": "思琳",
+   "name": "Ava",
+   "zh": "Ava",
+   "source": "purr",
+   "src": [
+    "Purr · Celine Ava",
+    "https://www.bypurr.com/bags/celine/ava"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1254,
+   "lo": 980,
+   "hi": 1916,
+   "n": 135,
+   "chg": null,
+   "retail": 1350,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9289,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1254
+    }
+   ]
+  },
+  {
+   "id": "bottega-veneta-arco",
+   "sec": "bag",
+   "brand": "Bottega Veneta",
+   "zhb": "葆蝶家",
+   "name": "Arco",
+   "zh": "Arco",
+   "source": "purr",
+   "src": [
+    "Purr · Bottega Veneta Arco",
+    "https://www.bypurr.com/bags/bottega-veneta/arco"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1190,
+   "lo": 930.75,
+   "hi": 1493,
+   "n": 61,
+   "chg": null,
+   "retail": 1200,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9917,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1190
+    }
+   ]
+  },
+  {
+   "id": "fendi-way",
+   "sec": "bag",
+   "brand": "Fendi",
+   "zhb": "芬迪",
+   "name": "Way",
+   "zh": "Way",
+   "source": "purr",
+   "src": [
+    "Purr · Fendi Way",
+    "https://www.bypurr.com/bags/fendi/way"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1324,
+   "lo": 708.75,
+   "hi": 1950,
+   "n": 91,
+   "chg": null,
+   "retail": 3400,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.3894,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1324
+    }
+   ]
+  },
+  {
+   "id": "dior-d-joy",
+   "sec": "bag",
+   "brand": "Dior",
+   "zhb": "迪奥",
+   "name": "D-Joy",
+   "zh": "D-Joy",
+   "source": "purr",
+   "src": [
+    "Purr · Dior D-Joy",
+    "https://www.bypurr.com/bags/dior/d-joy"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 5200,
+   "lo": 3664.53,
+   "hi": 5600,
+   "n": 43,
+   "chg": null,
+   "retail": 5500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9455,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 5200
+    }
+   ]
+  },
+  {
+   "id": "dior-jolie",
+   "sec": "bag",
+   "brand": "Dior",
+   "zhb": "迪奥",
+   "name": "Jolie",
+   "zh": "Jolie",
+   "source": "purr",
+   "src": [
+    "Purr · Dior Jolie",
+    "https://www.bypurr.com/bags/dior/jolie"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3050,
+   "lo": 2631,
+   "hi": 4866,
+   "n": 25,
+   "chg": null,
+   "retail": 4400,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.6932,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3050
+    }
+   ]
+  },
+  {
+   "id": "gucci-jackie-1961",
+   "sec": "bag",
+   "brand": "Gucci",
+   "zhb": "古驰",
+   "name": "Jackie 1961",
+   "zh": "Jackie 1961",
+   "source": "purr",
+   "src": [
+    "Purr · Gucci Jackie 1961",
+    "https://www.bypurr.com/bags/gucci/jackie-1961"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2200,
+   "lo": 1524,
+   "hi": 3272.5,
+   "n": 104,
+   "chg": null,
+   "retail": 2950,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7458,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2200
+    }
+   ]
+  },
+  {
+   "id": "goyard-beluga",
+   "sec": "bag",
+   "brand": "Goyard",
+   "zhb": "戈雅",
+   "name": "Beluga",
+   "zh": "Beluga",
+   "source": "purr",
+   "src": [
+    "Purr · Goyard Beluga",
+    "https://www.bypurr.com/bags/goyard/beluga"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3872,
+   "lo": 3536,
+   "hi": 4037.5,
+   "n": 37,
+   "chg": null,
+   "retail": 4300,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9005,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3872
+    }
+   ]
+  },
+  {
+   "id": "gucci-dionysus",
+   "sec": "bag",
+   "brand": "Gucci",
+   "zhb": "古驰",
+   "name": "Dionysus",
+   "zh": "Dionysus",
+   "source": "purr",
+   "src": [
+    "Purr · Gucci Dionysus",
+    "https://www.bypurr.com/bags/gucci/dionysus"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1269,
+   "lo": 868,
+   "hi": 1950,
+   "n": 121,
+   "chg": null,
+   "retail": 1350,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.94,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1269
+    }
+   ]
+  },
+  {
+   "id": "gucci-paparazzo",
+   "sec": "bag",
+   "brand": "Gucci",
+   "zhb": "古驰",
+   "name": "Paparazzo",
+   "zh": "Paparazzo",
+   "source": "purr",
+   "src": [
+    "Purr · Gucci Paparazzo",
+    "https://www.bypurr.com/bags/gucci/paparazzo"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3499,
+   "lo": 3025,
+   "hi": 3650,
+   "n": 34,
+   "chg": null,
+   "retail": 3650,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9586,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3499
+    }
+   ]
+  },
+  {
+   "id": "loewe-squeeze",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Squeeze",
+   "zh": "Squeeze",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Squeeze",
+    "https://www.bypurr.com/bags/loewe/squeeze"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3252,
+   "lo": 2340,
+   "hi": 4030,
+   "n": 42,
+   "chg": null,
+   "retail": 5500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.5913,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3252
+    }
+   ]
+  },
+  {
+   "id": "loewe-puzzle-edge",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Puzzle Edge",
+   "zh": "Puzzle Edge",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Puzzle Edge",
+    "https://www.bypurr.com/bags/loewe/puzzle-edge"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2850,
+   "lo": 2427.81,
+   "hi": 3850,
+   "n": 124,
+   "chg": null,
+   "retail": 3850,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7403,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2850
+    }
+   ]
+  },
+  {
+   "id": "loewe-puzzle",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Puzzle",
+   "zh": "Puzzle",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Puzzle",
+    "https://www.bypurr.com/bags/loewe/puzzle"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3262,
+   "lo": 2350,
+   "hi": 4100,
+   "n": 394,
+   "chg": null,
+   "retail": 4100,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7956,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3262
+    }
+   ]
+  },
+  {
+   "id": "loewe-cala",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Cala",
+   "zh": "Cala",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Cala",
+    "https://www.bypurr.com/bags/loewe/cala"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2450,
+   "lo": 2057.34,
+   "hi": 2700,
+   "n": 37,
+   "chg": null,
+   "retail": 2500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.98,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2450
+    }
+   ]
+  },
+  {
+   "id": "loewe-featherlight-puzzle",
+   "sec": "bag",
+   "brand": "Loewe",
+   "zhb": "罗意威",
+   "name": "Featherlight Puzzle",
+   "zh": "Featherlight Puzzle",
+   "source": "purr",
+   "src": [
+    "Purr · Loewe Featherlight Puzzle",
+    "https://www.bypurr.com/bags/loewe/featherlight-puzzle"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3850,
+   "lo": 2917,
+   "hi": 4800,
+   "n": 91,
+   "chg": null,
+   "retail": 3850,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3850
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-pochette-m-tis",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Pochette Métis",
+   "zh": "Pochette Métis",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Pochette Métis",
+    "https://www.bypurr.com/bags/louis-vuitton/pochette-m-tis"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2284,
+   "lo": 1605,
+   "hi": 2983,
+   "n": 121,
+   "chg": null,
+   "retail": 3300,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.6921,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2284
+    }
+   ]
+  },
+  {
+   "id": "miu-miu-beau",
+   "sec": "bag",
+   "brand": "Miu Miu",
+   "zhb": "缪缪",
+   "name": "Beau",
+   "zh": "Beau",
+   "source": "purr",
+   "src": [
+    "Purr · Miu Miu Beau",
+    "https://www.bypurr.com/bags/miu-miu/beau"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3650,
+   "lo": 2680,
+   "hi": 4000,
+   "n": 29,
+   "chg": null,
+   "retail": 4200,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.869,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3650
+    }
+   ]
+  },
+  {
+   "id": "miu-miu-aventure",
+   "sec": "bag",
+   "brand": "Miu Miu",
+   "zhb": "缪缪",
+   "name": "Aventure",
+   "zh": "Aventure",
+   "source": "purr",
+   "src": [
+    "Purr · Miu Miu Aventure",
+    "https://www.bypurr.com/bags/miu-miu/aventure"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3400,
+   "lo": 2630.75,
+   "hi": 3945,
+   "n": 77,
+   "chg": null,
+   "retail": 3400,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3400
+    }
+   ]
+  },
+  {
+   "id": "saint-laurent-loulou",
+   "sec": "bag",
+   "brand": "Saint Laurent",
+   "zhb": "圣罗兰",
+   "name": "Loulou",
+   "zh": "Loulou",
+   "source": "purr",
+   "src": [
+    "Purr · Saint Laurent Loulou",
+    "https://www.bypurr.com/bags/saint-laurent/loulou"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2290,
+   "lo": 1945,
+   "hi": 3100,
+   "n": 37,
+   "chg": null,
+   "retail": 2250,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0178,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2290
+    }
+   ]
+  },
+  {
+   "id": "prada-route",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Route",
+   "zh": "Route",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Route",
+    "https://www.bypurr.com/bags/prada/route"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3350,
+   "lo": 2720,
+   "hi": 4234.16,
+   "n": 37,
+   "chg": null,
+   "retail": 3500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9571,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3350
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-side-trunk",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Side Trunk",
+   "zh": "Side Trunk",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Side Trunk",
+    "https://www.bypurr.com/bags/louis-vuitton/side-trunk"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4200,
+   "lo": 3550,
+   "hi": 4700,
+   "n": 67,
+   "chg": null,
+   "retail": 4500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.9333,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4200
+    }
+   ]
+  },
+  {
+   "id": "prada-galleria",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Galleria",
+   "zh": "Galleria",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Galleria",
+    "https://www.bypurr.com/bags/prada/galleria"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4500,
+   "lo": 3800,
+   "hi": 5500,
+   "n": 61,
+   "chg": null,
+   "retail": 4500,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4500
+    }
+   ]
+  },
+  {
+   "id": "prada-bonnie",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Bonnie",
+   "zh": "Bonnie",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Bonnie",
+    "https://www.bypurr.com/bags/prada/bonnie"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3550,
+   "lo": 3000,
+   "hi": 3800,
+   "n": 93,
+   "chg": null,
+   "retail": 3550,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3550
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-multipass",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Multipass",
+   "zh": "Multipass",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Multipass",
+    "https://www.bypurr.com/bags/louis-vuitton/multipass"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3350,
+   "lo": 2768,
+   "hi": 3735,
+   "n": 80,
+   "chg": null,
+   "retail": 3350,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3350
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-pochette-hills",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Pochette Hills",
+   "zh": "Pochette Hills",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Pochette Hills",
+    "https://www.bypurr.com/bags/louis-vuitton/pochette-hills"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2300,
+   "lo": 1856,
+   "hi": 3350,
+   "n": 61,
+   "chg": null,
+   "retail": 2000,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.15,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2300
+    }
+   ]
+  },
+  {
+   "id": "prada-arque",
+   "sec": "bag",
+   "brand": "Prada",
+   "zhb": "普拉达",
+   "name": "Arque",
+   "zh": "Arque",
+   "source": "purr",
+   "src": [
+    "Purr · Prada Arque",
+    "https://www.bypurr.com/bags/prada/arque"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2763,
+   "lo": 2195,
+   "hi": 3250,
+   "n": 37,
+   "chg": null,
+   "retail": 3250,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.8502,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2763
+    }
+   ]
+  },
+  {
+   "id": "balenciaga-le-cagole",
+   "sec": "bag",
+   "brand": "Balenciaga",
+   "zhb": "巴黎世家",
+   "name": "Le Cagole",
+   "zh": "Le Cagole",
+   "source": "purr",
+   "src": [
+    "Purr · Balenciaga Le Cagole",
+    "https://www.bypurr.com/bags/balenciaga/le-cagole"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1406,
+   "lo": 1094,
+   "hi": 2157,
+   "n": 121,
+   "chg": null,
+   "retail": 2600,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.5408,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1406
+    }
+   ]
+  },
+  {
+   "id": "balenciaga-hourglass",
+   "sec": "bag",
+   "brand": "Balenciaga",
+   "zhb": "巴黎世家",
+   "name": "Hourglass",
+   "zh": "Hourglass",
+   "source": "purr",
+   "src": [
+    "Purr · Balenciaga Hourglass",
+    "https://www.bypurr.com/bags/balenciaga/hourglass"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1382,
+   "lo": 1000,
+   "hi": 1900,
+   "n": 121,
+   "chg": null,
+   "retail": 2850,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.4849,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1382
+    }
+   ]
+  },
+  {
+   "id": "balenciaga-rodeo",
+   "sec": "bag",
+   "brand": "Balenciaga",
+   "zhb": "巴黎世家",
+   "name": "Rodeo",
+   "zh": "Rodeo",
+   "source": "purr",
+   "src": [
+    "Purr · Balenciaga Rodeo",
+    "https://www.bypurr.com/bags/balenciaga/rodeo"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 3650,
+   "lo": 2990,
+   "hi": 4590,
+   "n": 219,
+   "chg": null,
+   "retail": 4200,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.869,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 3650
+    }
+   ]
+  },
+  {
+   "id": "the-row-marlo-12",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Marlo 12",
+   "zh": "Marlo 12",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Marlo 12",
+    "https://www.bypurr.com/bags/the-row/marlo-12"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4900,
+   "lo": 3600,
+   "hi": 5508,
+   "n": 65,
+   "chg": null,
+   "retail": 4900,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.0,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4900
+    }
+   ]
+  },
+  {
+   "id": "the-row-margaux-10",
+   "sec": "bag",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Margaux 10",
+   "zh": "Margaux 10",
+   "source": "purr",
+   "src": [
+    "Purr · The Row Margaux 10",
+    "https://www.bypurr.com/bags/the-row/margaux-10"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 4998,
+   "lo": 4267,
+   "hi": 6950,
+   "n": 97,
+   "chg": null,
+   "retail": 4400,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.1359,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 4998
+    }
+   ]
+  },
+  {
+   "id": "fendi-runaway",
+   "sec": "bag",
+   "brand": "Fendi",
+   "zhb": "芬迪",
+   "name": "Runaway",
+   "zh": "Runaway",
+   "source": "purr",
+   "src": [
+    "Purr · Fendi Runaway",
+    "https://www.bypurr.com/bags/fendi/runaway"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 1214,
+   "lo": 725,
+   "hi": 1552,
+   "n": 61,
+   "chg": null,
+   "retail": 1650,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.7358,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 1214
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-speedy",
+   "sec": "bag",
+   "brand": "Louis Vuitton",
+   "zhb": "路易威登",
+   "name": "Speedy",
+   "zh": "Speedy",
+   "source": "purr",
+   "src": [
+    "Purr · Louis Vuitton Speedy",
+    "https://www.bypurr.com/bags/louis-vuitton/speedy"
+   ],
+   "note": {
+    "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
+    "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
+   },
+   "type": "list",
+   "auto": true,
+   "mid": 2260,
+   "lo": 1395,
+   "hi": 3415,
+   "n": 272,
+   "chg": null,
+   "retail": 2850,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 0.793,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 2260
+    }
+   ]
+  },
+  {
+   "id": "daytona",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "Daytona 126500LN",
+   "zh": "迪通拿 126500LN",
+   "source": "rolexradar",
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/126500LN"
+   ],
+   "note": {
+    "en": "Weekly average of Chrono24 asks. White “panda” dials run about $6k above black.",
+    "zh": "Chrono24 挂牌价的周均值。白色“熊猫”盘比黑盘贵约 6000 美元。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 38454,
+   "lo": 32925,
+   "hi": 39911,
+   "n": null,
+   "chg": 0.023,
+   "retail": 15100,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 2.5466,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 38454
+    }
+   ]
+  },
+  {
+   "id": "gmt",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "GMT-Master II “Pepsi” 126710BLRO",
+   "zh": "GMT-Master II 百事圈 126710BLRO",
+   "source": "rolexradar",
+   "retail": 11300,
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/126710BLRO"
+   ],
+   "note": {
+    "en": "Discontinued in February 2026. Retail is the last list price, which the source treats as approximate.",
+    "zh": "2026 年 2 月停产。公价为停产前的最后售价，来源认为仅供参考。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 30155,
+   "lo": 26149,
+   "hi": 34325,
+   "n": null,
+   "chg": -0.021,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 2.6686,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 30155
+    }
+   ]
+  },
+  {
+   "id": "batman",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "GMT-Master II “Batman” 126710BLNR",
+   "zh": "GMT-Master II 蝙蝠侠 126710BLNR",
+   "source": "rolexradar",
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/126710BLNR"
+   ],
+   "note": {
+    "en": "Weekly average of Chrono24 asks.",
+    "zh": "Chrono24 挂牌价的周均值。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 20369,
+   "lo": 18700,
+   "hi": 22500,
+   "n": null,
+   "chg": -0.022,
+   "retail": 10700,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.9036,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 20369
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "Submariner Date 126610LN",
+   "zh": "潜航者 126610LN",
+   "source": "rolexradar",
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/126610LN"
+   ],
+   "note": {
+    "en": "Weekly average of Chrono24 asks.",
+    "zh": "Chrono24 挂牌价的周均值。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 16211,
+   "lo": 14935,
+   "hi": 17591,
+   "n": null,
+   "chg": -0.028,
+   "retail": 10100,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.605,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 16211
+    }
+   ]
+  },
+  {
+   "id": "exp2",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "Explorer II 226570",
+   "zh": "探险家 II 226570",
+   "source": "rolexradar",
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/226570"
+   ],
+   "note": {
+    "en": "Weekly average of Chrono24 asks.",
+    "zh": "Chrono24 挂牌价的周均值。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 13208,
+   "lo": 12219,
+   "hi": 13897,
+   "n": null,
+   "chg": -0.021,
+   "retail": 8550,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.5448,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 13208
+    }
+   ]
+  },
+  {
+   "id": "op41",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "Oyster Perpetual 41 124300",
+   "zh": "蚝式恒动 41 124300",
+   "source": "rolexradar",
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/124300"
+   ],
+   "note": {
+    "en": "Weekly average of Chrono24 asks across dial colours. Retail is the source’s figure; some dealers quote about $6,500.",
+    "zh": "Chrono24 挂牌价的周均值，涵盖各色表盘。公价取自来源，部分经销商报价约 6500 美元。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 10392,
+   "lo": 9032,
+   "hi": 11425,
+   "n": null,
+   "chg": null,
+   "retail": 6150,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.6898,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 10392
+    }
+   ]
+  },
+  {
+   "id": "sky",
+   "sec": "wj",
+   "brand": "Rolex",
+   "zhb": "劳力士",
+   "name": "Sky-Dweller 326934",
+   "zh": "天行者 326934",
+   "source": "rolexradar",
+   "src": [
+    "Rolex Radar · Chrono24 weekly",
+    "https://rolexradar.watch/models/326934"
+   ],
+   "note": {
+    "en": "Replaced by the 336934 in 2023, so retail is the last list price.",
+    "zh": "2023 年被 336934 取代，公价为停产前的最后售价。"
+   },
+   "type": "mkt",
+   "auto": true,
+   "mid": 23961,
+   "lo": 21326,
+   "hi": 26298,
+   "n": null,
+   "chg": -0.017,
+   "retail": 15900,
+   "asof": "2026-09-27",
+   "fetched": "2026-09-27",
+   "stale": false,
+   "ret": 1.507,
+   "history": [
+    {
+     "d": "2026-09-27",
+     "mid": 23961
+    }
+   ]
+  },
+  {
+   "id": "ro15510",
+   "sec": "wj",
+   "brand": "Audemars Piguet",
+   "zhb": "爱彼",
+   "name": "Royal Oak 15510ST",
+   "zh": "皇家橡树 15510ST",
+   "source": "manual",
+   "type": "mkt",
+   "retail": 31900,
+   "mid": 47389,
+   "lo": 46300,
+   "hi": 74500,
+   "src": [
+    "WatchCharts · Royal Oak 15510ST",
+    "https://watchcharts.com/watch_model/41727-audemars-piguet-royal-oak-self-15510st/overview"
+   ],
+   "note": {
+    "en": "Market value $47,389. The range is current dealer asks; blue and green dials sit at the top.",
+    "zh": "市场估值 47,389 美元。区间为经销商挂牌价，蓝盘和绿盘价格最高。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 1.4855,
+   "history": []
+  },
+  {
+   "id": "aquanaut",
+   "sec": "wj",
+   "brand": "Patek Philippe",
+   "zhb": "百达翡丽",
+   "name": "Aquanaut 5167/1A",
+   "zh": "Aquanaut 5167/1A",
+   "source": "manual",
+   "type": "mkt",
+   "retail": 21650,
+   "mid": 70574,
+   "lo": 58675,
+   "hi": 72243,
+   "n": 72,
+   "src": [
+    "Loupe · Aquanaut 5167/1A report",
+    "https://www.loupe.watch/watch-guides/aquanaut-5167-1a-market-report-2026"
+   ],
+   "note": {
+    "en": "April 2026 market value from 72 observations; the median Chrono24 ask was $71,200. The range spans the past two years.",
+    "zh": "2026 年 4 月基于 72 个样本的市场估值，Chrono24 挂牌中位价 71,200 美元。区间为近两年高低点。"
+   },
+   "asof": "2026-04-30",
+   "auto": false,
+   "ret": 3.2598,
+   "history": []
+  },
+  {
+   "id": "bb58",
+   "sec": "wj",
+   "brand": "Tudor",
+   "zhb": "帝舵",
+   "name": "Black Bay 58 (2026)",
+   "zh": "碧湾 58（2026 款）",
+   "source": "manual",
+   "type": "ask",
+   "retail": 5225,
+   "mid": 5325,
+   "lo": 5075,
+   "hi": 5575,
+   "src": [
+    "The Watchology · BB58 buying guide",
+    "https://thewatchology.com/articles/buying-guides/tudor-black-bay-58-buying-guide-2026/"
+   ],
+   "note": {
+    "en": "Pre-owned 2026 examples on the Oyster bracelet; the typical figure is the midpoint. The previous 79030N trades around $2,809.",
+    "zh": "2026 款三节链带二手挂牌，典型价取中值。上一代 79030N 约 2809 美元。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 1.0191,
+   "history": []
+  },
+  {
+   "id": "smp300",
+   "sec": "wj",
+   "brand": "Omega",
+   "zhb": "欧米茄",
+   "name": "Seamaster Diver 300M 210.30.42.20.01.001",
+   "zh": "海马 300 米潜水表 黑盘",
+   "source": "manual",
+   "type": "mkt",
+   "retail": 6700,
+   "mid": 5578,
+   "lo": 4909,
+   "hi": 6336,
+   "src": [
+    "WatchCharts · Seamaster 300M",
+    "https://watchcharts.com/watch_model/869-omega-seamaster-diver-300m-210-30-42-20-01-001/overview"
+   ],
+   "note": {
+    "en": "Black dial, steel bracelet. Range is Chrono24 listings by condition.",
+    "zh": "黑盘钢带款。区间为 Chrono24 不同品相的挂牌价。"
+   },
+   "asof": "2026-08-31",
+   "auto": false,
+   "ret": 0.8325,
+   "history": []
+  },
+  {
+   "id": "tankmust",
+   "sec": "wj",
+   "brand": "Cartier",
+   "zhb": "卡地亚",
+   "name": "Tank Must, large",
+   "zh": "Tank Must 大号",
+   "source": "manual",
+   "type": "est",
+   "retail": 3150,
+   "mid": 2600,
+   "lo": 2400,
+   "hi": 2800,
+   "src": [
+    "The Watchology · Tank Must review",
+    "https://thewatchology.com/articles/watch-reviews/cartier-tank-must-review-2026/"
+   ],
+   "note": {
+    "en": "Pre-owned examples on Watchfinder and Chrono24; the typical figure is the midpoint.",
+    "zh": "Watchfinder 和 Chrono24 上的二手价，典型价取中值。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.8254,
+   "history": []
+  },
+  {
+   "id": "santos",
+   "sec": "wj",
+   "brand": "Cartier",
+   "zhb": "卡地亚",
+   "name": "Santos Medium WSSA0029",
+   "zh": "Santos 中号 WSSA0029",
+   "source": "manual",
+   "type": "mkt",
+   "retail": 8060,
+   "mid": 6771,
+   "lo": 5900,
+   "hi": 7900,
+   "src": [
+    "WatchCharts · Santos WSSA0029",
+    "https://watchcharts.com/watch_model/35440-cartier-santos-medium-wssa0029/overview"
+   ],
+   "note": {
+    "en": "Retail from an authorised dealer listing. New-in-box pieces ask up to $8,495.",
+    "zh": "公价取自授权经销商。全新带盒的挂牌价最高到 8495 美元。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.8401,
+   "history": []
+  },
+  {
+   "id": "speedy",
+   "sec": "wj",
+   "brand": "Omega",
+   "zhb": "欧米茄",
+   "name": "Speedmaster Moonwatch 310.30.42.50.01.002",
+   "zh": "超霸登月表 蓝宝石底",
+   "source": "manual",
+   "type": "mkt",
+   "retail": 9000,
+   "mid": 6501,
+   "lo": 6750,
+   "hi": 8650,
+   "src": [
+    "WatchCharts · Speedmaster",
+    "https://watchcharts.com/watch_model/30921-omega-speedmaster-professional-moonwatch-310-30-42-50-01-002/overview"
+   ],
+   "note": {
+    "en": "Market value $6,501. Current dealer asks run $6,750 (full set, like new) to $8,650 (new).",
+    "zh": "市场估值 6501 美元。目前经销商挂牌价从 6750 美元（全套近新）到 8650 美元（全新）不等。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.7223,
+   "history": []
+  },
+  {
+   "id": "love",
+   "sec": "wj",
+   "brand": "Cartier",
+   "zhb": "卡地亚",
+   "name": "Love bracelet, yellow gold",
+   "zh": "Love 手镯 黄金",
+   "source": "manual",
+   "type": "est",
+   "retail": 7950,
+   "mid": 7550,
+   "lo": 6800,
+   "hi": 7600,
+   "src": [
+    "InvestedLuxury · Love bracelet",
+    "https://investedluxury.com/fashion/jewelry/cartier-love-bracelet-guide"
+   ],
+   "note": {
+    "en": "Excellent condition with papers. Diamond versions keep less: the four-diamond sells for $7.5–9.5k against $11,100 retail.",
+    "zh": "极好品相、带证书。镶钻款保值较差：四钻款公价 11,100 美元，二手 7,500–9,500 美元。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.9497,
+   "history": []
+  },
+  {
+   "id": "alhambra",
+   "sec": "wj",
+   "brand": "Van Cleef & Arpels",
+   "zhb": "梵克雅宝",
+   "name": "Vintage Alhambra 10-motif necklace",
+   "zh": "Vintage Alhambra 十花项链",
+   "source": "manual",
+   "type": "est",
+   "retail": 10600,
+   "mid": 9540,
+   "lo": 8480,
+   "hi": 11660,
+   "src": [
+    "Street Stylis · Alhambra prices",
+    "https://streetstylis.com/van-cleef-alhambra-prices/"
+   ],
+   "note": {
+    "en": "Popular pieces resell at 80–110% of retail; the typical figure uses 90%. A 1stDibs listing currently asks $8,000.",
+    "zh": "热门款二手价为公价的 80–110%，典型价按 90% 计。1stDibs 上有一条挂牌价 8000 美元。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.9,
+   "history": []
+  },
+  {
+   "id": "juc",
+   "sec": "wj",
+   "brand": "Cartier",
+   "zhb": "卡地亚",
+   "name": "Juste un Clou bracelet",
+   "zh": "Juste un Clou 钉子手镯",
+   "source": "manual",
+   "type": "est",
+   "ret": 0.95,
+   "src": [
+    "myGemma · Juste un Clou prices",
+    "https://mygemma.com/blogs/news/how-much-is-a-cartier-juste-un-clou-bracelet"
+   ],
+   "note": {
+    "en": "Average retention of about 95% across versions. Resale runs from $2,450 to $16,995 depending on size, gold and diamonds.",
+    "zh": "各版本平均保值率约 95%。二手价从 2450 到 16,995 美元不等，取决于尺寸、金色和是否镶钻。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "history": []
+  },
+  {
+   "id": "trinity",
+   "sec": "wj",
+   "brand": "Cartier",
+   "zhb": "卡地亚",
+   "name": "Trinity ring, classic",
+   "zh": "Trinity 三色金戒指 经典款",
+   "source": "manual",
+   "type": "est",
+   "retail": 1750,
+   "mid": 1150,
+   "lo": 800,
+   "hi": 1500,
+   "src": [
+    "JoliCloset · Pre-owned Trinity",
+    "https://www.jolicloset.com/en/designers-women/cartier/womens-jewellery/rings/trinity"
+   ],
+   "note": {
+    "en": "Classic 18k model. Resale depends heavily on size and band wear; the typical figure is the midpoint.",
+    "zh": "18K 经典款。二手价很受尺寸和戒圈磨损影响，典型价取中值。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.6571,
+   "history": []
+  },
+  {
+   "id": "perlee",
+   "sec": "wj",
+   "brand": "Van Cleef & Arpels",
+   "zhb": "梵克雅宝",
+   "name": "Perlée collection",
+   "zh": "Perlée 系列",
+   "source": "manual",
+   "type": "est",
+   "ret": 0.6,
+   "src": [
+    "The Luxury Closet · VCA resale guide",
+    "https://theluxurycloset.com/blog/2026/06/08/van-cleef-arpels-resale-value/"
+   ],
+   "note": {
+    "en": "Perlée pieces typically keep 50–70% of retail, well below Alhambra. The figure shown is the midpoint.",
+    "zh": "Perlée 系列通常保值 50–70%，明显低于四叶草系列，此处取中值。"
+   },
+   "asof": "2026-06-08",
+   "auto": false,
+   "history": []
+  },
+  {
+   "id": "rowknit",
+   "sec": "rtw",
+   "brand": "The Row",
+   "zhb": "The Row",
+   "name": "Cashmere knitwear",
+   "zh": "羊绒针织",
+   "source": "manual",
+   "type": "est",
+   "ret": 0.5,
+   "src": [
+    "InvestedLuxury · Cashmere investment guide",
+    "https://investedluxury.com/fashion/clothing/best-cashmere-investment-guide"
+   ],
+   "note": {
+    "en": "The Row and Toteme cashmere resells for about 40–60% of retail. The figure shown is the midpoint.",
+    "zh": "The Row 和 Toteme 的羊绒单品二手约为公价的 40–60%，此处取中值。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "history": []
+  },
+  {
+   "id": "tweed",
+   "sec": "rtw",
+   "brand": "Chanel",
+   "zhb": "香奈儿",
+   "name": "Tweed jacket",
+   "zh": "粗花呢外套",
+   "source": "manual",
+   "type": "est",
+   "cur": "EUR",
+   "retail": 9000,
+   "mid": 2750,
+   "lo": 2500,
+   "hi": 3000,
+   "src": [
+    "FashionUnited · The Chanel jacket",
+    "https://fashionunited.com/news/fashion/the-chanel-jacket-is-enjoying-a-resurgence-the-story-of-a-boom-foretold/2026030570918"
+   ],
+   "note": {
+    "en": "Retail is the SS26 price; resale mostly covers older seasons. On The RealReal a 2022 jacket asked $3,485 and a 2026 blazer $6,945.",
+    "zh": "公价为 2026 春夏新款价，二手多为往季款。The RealReal 上 2022 年款挂牌 3485 美元，2026 年款挂牌 6945 美元。"
+   },
+   "asof": "2026-03-05",
+   "auto": false,
+   "ret": 0.3056,
+   "history": []
+  },
+  {
+   "id": "maya",
+   "sec": "rtw",
+   "brand": "Moncler",
+   "zhb": "盟可睐",
+   "name": "Maya short down jacket",
+   "zh": "Maya 短款羽绒服",
+   "source": "manual",
+   "type": "sold",
+   "retail": 1895,
+   "mid": 1157,
+   "n": 1,
+   "src": [
+    "StockX · Moncler Maya",
+    "https://stockx.com/moncler-maya-short-down-jacket-night-blue"
+   ],
+   "note": {
+    "en": "Last completed sale of an FW21 Night Blue Maya. One sale is a thin sample.",
+    "zh": "FW21 夜蓝色 Maya 的最近一笔成交。只有一笔成交，样本很少。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.6106,
+   "history": []
+  },
+  {
+   "id": "maxmara",
+   "sec": "rtw",
+   "brand": "Max Mara",
+   "zhb": "麦丝玛拉",
+   "name": "101801 Icon coat",
+   "zh": "101801 经典大衣",
+   "source": "manual",
+   "type": "ask",
+   "retail": 1993,
+   "mid": 845,
+   "lo": 500,
+   "hi": 1190,
+   "n": 2,
+   "src": [
+    "Biffi (retail) · eBay listings",
+    "https://www.biffi.com/en-us/products/cappotto-101801-icon-2621018010600-032"
+   ],
+   "note": {
+    "en": "Two eBay listings: a vintage coat at $500 and an unworn one at $1,190. The typical figure is their midpoint.",
+    "zh": "两条 eBay 挂牌：中古款 500 美元，未穿过的 1190 美元。典型价取两者中值。"
+   },
+   "asof": "2026-07-31",
+   "auto": false,
+   "ret": 0.424,
+   "history": []
+  },
+  {
+   "id": "trench",
+   "sec": "rtw",
+   "brand": "Burberry",
+   "zhb": "博柏利",
+   "name": "Kensington heritage trench",
+   "zh": "Kensington 经典风衣",
+   "source": "manual",
+   "type": "est",
+   "retail": 2850,
+   "mid": 1140,
+   "lo": 855,
+   "hi": 1425,
+   "src": [
+    "The Pampler · Burberry trench guide",
+    "https://www.thepamplermag.com/post/burberry-trench-coat"
+   ],
+   "note": {
+    "en": "Estimated from the 30–50% of retail that good-condition luxury outerwear typically fetches. Vintage trenches range from £150 to over £2,000.",
+    "zh": "按奢侈品外套好品相通常卖到公价 30–50% 估算。中古风衣价格从 150 英镑到 2000 多英镑不等。"
+   },
+   "asof": "2026-09-27",
+   "auto": false,
+   "ret": 0.4,
+   "history": []
+  },
+  {
+   "id": "loro",
+   "sec": "rtw",
+   "brand": "Loro Piana",
+   "zhb": "诺悠翩雅",
+   "name": "Plain cashmere sweater",
+   "zh": "基础款羊绒毛衣",
+   "source": "manual",
+   "type": "list",
+   "ret": 0.2,
+   "src": [
+    "InvestedLuxury · Loro Piana sweaters",
+    "https://investedluxury.com/fashion/clothing/loro-piana-sweater-worth-it-price-per-wear"
+   ],
+   "note": {
+    "en": "Plain cashmere listed at about a fifth of retail on The RealReal. Baby cashmere and Piuma hold 40–55%. No dollar figures were published.",
+    "zh": "The RealReal 上基础款羊绒毛衣的挂牌价约为公价的五分之一；小山羊绒和 Piuma 系列能保住 40–55%。来源未给出具体金额。"
+   },
+   "asof": "2026-09-22",
+   "auto": false,
+   "history": []
+  }
+ ]
+}

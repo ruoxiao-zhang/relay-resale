@@ -1,0 +1,418 @@
+<title>Relay Resale Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;900&display=swap">
+<style>
+:root{
+  --bg:#EDEFEC; --surface:#F9FAF8; --surface-2:#E3E7E3; --ink:#15191A; --muted:#5A645E; --faint:#8A938D;
+  --line:#D0D6D1; --accent:#1F5C55; --accent-soft:#D3E4DF; --gold:#94703A;
+  --red:#C3362B; --green:#1C7F4F; --red-soft:#F5DDD9; --green-soft:#D6ECE0;
+  --s-bag:#8A5A2B; --s-wj:#2F5E8C; --s-rtw:#7A4E80;
+  --serif:"Fraunces","Noto Serif SC",Georgia,serif;
+  --sans:"IBM Plex Sans","Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#101413; --surface:#171C1B; --surface-2:#202725; --ink:#E5EAE7; --muted:#9AA49E; --faint:#6D7771;
+    --line:#2A3230; --accent:#72B8AC; --accent-soft:#1C3531; --gold:#CDA66A;
+    --red:#F0685C; --green:#4DC48B; --red-soft:#3A1E1B; --green-soft:#15302A;
+    --s-bag:#D39A5E; --s-wj:#7FAEDB; --s-rtw:#C497CB;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#101413; --surface:#171C1B; --surface-2:#202725; --ink:#E5EAE7; --muted:#9AA49E; --faint:#6D7771;
+  --line:#2A3230; --accent:#72B8AC; --accent-soft:#1C3531; --gold:#CDA66A;
+  --red:#F0685C; --green:#4DC48B; --red-soft:#3A1E1B; --green-soft:#15302A;
+  --s-bag:#D39A5E; --s-wj:#7FAEDB; --s-rtw:#C497CB;
+}
+/* up/down colours follow market convention: green-up in English, red-up in Chinese (A-share) */
+.app[data-lang="en"]{--pos:var(--green);--neg:var(--red);--pos-soft:var(--green-soft)}
+.app[data-lang="zh"]{--pos:var(--red);--neg:var(--green);--pos-soft:var(--red-soft)}
+.app[data-lang="zh"]{--serif:"Noto Serif SC","Songti SC",serif}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.6;padding-inline:16px;padding-block:0 48px}
+.app{max-width:1200px;margin:0 auto}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.pos{color:var(--pos)} .neg{color:var(--neg)} .mut{color:var(--muted)}
+button{font:inherit;color:inherit}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:28px 16px;border-bottom:1px solid var(--ink)}
+.brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.brand h1{font-family:var(--serif);font-weight:800;font-size:40px;letter-spacing:.02em;margin:0;line-height:1}
+.app[data-lang="zh"] .brand h1{font-weight:900;letter-spacing:.08em}
+.brand .sub{font-size:12px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.mast-r{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.mast-r b{color:var(--gold);font-weight:500}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.lang button{background:none;border:0;padding:3px 10px;cursor:pointer;font-size:12px;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+
+.secnav{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.sec{background:none;border:0;border-left:1px solid var(--line);padding:16px 18px 14px;text-align:left;cursor:pointer;display:grid;gap:2px}
+.sec:first-child{border-left:0;padding-left:0}
+.sec .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.sec .k i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.sec .t{font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.25}
+.sec .m{font-size:12px;color:var(--muted)}
+.sec[aria-pressed="true"]{box-shadow:inset 0 -3px 0 var(--sc)}
+.sec[aria-pressed="true"] .k{color:var(--ink);font-weight:600}
+@media (max-width:640px){.secnav{grid-template-columns:1fr}.sec{border-left:0;border-top:1px solid var(--line);padding-left:0}.sec:first-child{border-top:0}.sec .t{font-size:18px}}
+
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,2fr);gap:0 24px;padding-block:18px;border-bottom:1px solid var(--line);align-items:start}
+.summary .st{display:grid}
+.summary .st span{font-size:12px;color:var(--muted)}
+.summary .st b{font-size:22px;font-weight:500;line-height:1.3}
+.summary .st small{font-size:12px;color:var(--muted)}
+.summary p{margin:0;color:var(--ink);max-width:60ch;font-size:14px}
+@media (max-width:860px){.summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 16px}.summary p{grid-column:1/-1}}
+
+.main{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;margin-top:24px;align-items:start}
+@media (max-width:960px){.main{grid-template-columns:1fr}}
+h2{font-family:var(--serif);font-weight:600;font-size:19px;margin:0;text-wrap:balance}
+.sec-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tools input{font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:5px 10px;width:170px;min-width:0}
+.empty{padding:24px;text-align:center;color:var(--muted);white-space:normal}
+.sec-head select{font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:5px 10px}
+
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:4px}
+table{width:100%;border-collapse:collapse}
+th{font-weight:500;font-size:12px;color:var(--muted);text-align:right;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child{text-align:left}
+td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;vertical-align:middle}
+td:first-child{text-align:left;white-space:normal}
+tbody tr{cursor:pointer;transition:background .15s}
+tbody tr:hover{background:var(--surface-2)}
+tbody tr[aria-selected="true"]{background:var(--accent-soft)}
+tbody tr:last-child td{border-bottom:0}
+.it-brand{font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.it-name{font-weight:500}
+.ret{display:inline-block;min-width:54px;padding:1px 6px;border-radius:3px;font-size:12px;text-align:center}
+.ret.hi{background:var(--pos-soft);color:var(--pos)}
+.ret.lo{background:var(--surface-2);color:var(--muted)}
+.dtype{font-size:11px;color:var(--faint);white-space:nowrap}
+@media (max-width:640px){.c-retail,.c-type{display:none}}
+
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:20px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px)}
+@media (max-width:960px){.detail{position:static}}
+.d-brand{font-size:12px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}
+.d-name{font-family:var(--serif);font-weight:800;font-size:24px;line-height:1.25;margin:2px 0 6px;text-wrap:balance}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:11px;border:1px solid var(--line);border-radius:3px;padding:0 6px;color:var(--muted)}
+.badge.t{border-color:var(--gold);color:var(--gold)}
+.d-price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:14px}
+.d-price .big{font-size:32px;font-weight:500;line-height:1}
+.d-price .lab{font-size:12px;color:var(--muted)}
+.range svg{width:100%;height:auto;display:block;margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:10px;border-top:1px solid var(--line)}
+.stats div{padding-top:10px;display:grid}
+.stats span{font-size:12px;color:var(--muted)}
+.stats b{font-weight:500}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0;max-width:60ch}
+.src{font-size:12px;margin-top:8px;color:var(--muted)}
+
+.est{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+.est h3{font-size:14px;margin:0 0 10px;font-weight:600}
+.field{display:grid;gap:6px;margin-bottom:12px}
+.field>span{font-size:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--bg);border-radius:3px;padding:3px 9px;font-size:12px;cursor:pointer;display:inline-flex;gap:6px;align-items:baseline}
+.chip small{font-family:var(--mono);color:var(--faint);font-size:11px}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:500}
+.chip[aria-pressed="true"] small{color:var(--accent)}
+.hint{font-size:12px;color:var(--muted)}
+.quote{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.quote div{background:var(--bg);border-radius:4px;padding:10px 12px;display:grid}
+.quote span{font-size:12px;color:var(--muted)}
+.quote b{font-size:17px;font-weight:500}
+.quote .fine{grid-column:1/-1;background:none;padding:0;font-size:12px;color:var(--muted)}
+
+.ladder{margin-top:40px}
+.ladder .lede{color:var(--muted);font-size:13px;margin:4px 0 14px;max-width:70ch}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.lad{display:grid;gap:6px}
+.lrow{display:grid;grid-template-columns:minmax(0,220px) 1fr 56px;gap:12px;align-items:center;cursor:pointer;background:none;border:0;padding:2px 0;text-align:left}
+.lrow:hover .ln{text-decoration:underline}
+.lmore{background:none;border:1px dashed var(--line);border-radius:4px;padding:6px 10px;font-size:12px;color:var(--muted);cursor:pointer;margin-block:4px}
+.lmore:hover{color:var(--ink);border-color:var(--muted)}
+.ln{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{position:relative;height:12px}
+.bar{position:absolute;left:0;top:0;bottom:0;border-radius:0 2px 2px 0}
+.par{position:absolute;top:-4px;bottom:-4px;border-left:1px dashed var(--gold)}
+.lv{text-align:right;font-size:13px}
+.parlab{font-size:11px;color:var(--gold);margin-top:6px}
+@media (max-width:560px){.lrow{grid-template-columns:120px 1fr 48px}}
+
+.method{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+@media (max-width:760px){.method{grid-template-columns:1fr}}
+.method h2{font-size:16px;margin-bottom:6px}
+.method p,.method li{font-size:13px;color:var(--muted);max-width:70ch}
+.method ul{padding-left:18px;margin:0}
+.method li{margin-bottom:4px}
+.badge.warn{border-color:var(--red);color:var(--red)}
+.trend{margin-top:14px}
+.trend .th{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.trend svg{width:100%;height:auto;display:block;margin-top:4px}
+.trend .wait{font-size:12px;color:var(--faint);border:1px dashed var(--line);border-radius:4px;padding:10px 12px;margin-top:4px}
+.loadmsg{padding:40px 0;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="app" id="app" data-lang="en">
+  <header class="mast">
+    <div class="brand"><h1 id="brandname">Relay</h1><span class="sub" id="brandsub"></span></div>
+    <div class="mast-r"><span id="asof"></span>
+      <span class="lang" role="group" aria-label="Language"><button data-lang="en">EN</button><button data-lang="zh">中文</button></span>
+    </div>
+  </header>
+  <nav class="secnav" id="secnav"></nav>
+  <div class="summary" id="summary"></div>
+  <div class="main">
+    <section>
+      <div class="sec-head"><h2 id="list-title"></h2>
+        <div class="tools"><input id="q" type="search" aria-label="Search"><select id="sort" aria-label="Sort"></select></div></div>
+      <div class="tbl-wrap"><table><thead id="thead"></thead><tbody id="rows"></tbody></table></div>
+    </section>
+    <aside class="detail" id="detail" aria-live="polite"></aside>
+  </div>
+  <section class="ladder">
+    <h2 id="lad-title"></h2>
+    <p class="lede" id="lad-lede"></p>
+    <div class="legend" id="legend"></div>
+    <div class="lad" id="lad"></div>
+    <div class="parlab" id="parlab"></div>
+  </section>
+  <section class="method" id="method"></section>
+</div>
+
+<script>
+/* Data comes from data.json, written by scrape.py. mid = typical resale, lo/hi = observed range.
+   type: ask = asking prices, mkt = market tracker, list = listing aggregate, sold = completed sale, est = published estimate */
+let ITEMS=[], GENERATED='';
+
+const SECS={bag:{en:'Handbags',zh:'奢侈品包袋',c:'--s-bag'},wj:{en:'Jewellery & Watches',zh:'珠宝腕表',c:'--s-wj'},rtw:{en:'Ready-to-Wear',zh:'成衣',c:'--s-rtw'}};
+const T={
+ en:{brand:'Relay',sub:'Pre-owned luxury ledger',asof:d=>`Updated <b>${d}</b> · USD unless marked`,
+  items:'items',medRet:'Median retention',best:'Best holder',range:'Widest spread',
+  take:(n,above,best,worst,sec)=>`${above} of ${n} items sell above retail. ${best} holds value best; ${worst} keeps the least.`+(sec==='rtw'?' Clothing sources are thin, so treat this section as a rough guide.':''),
+  sort:{ret:'Sort by retention',mid:'Sort by resale price',brand:'Sort by brand'},q:'Search brand or model',none:'Nothing in this section matches. Try a brand name.',
+  th:['Item','Retail','Typical resale','Retention','Data'],
+  types:{ask:'Asking prices',mkt:'Market tracker',list:'Listing aggregate',sold:'Completed sale',est:'Published estimate'},
+  auto:'Auto-updated weekly',manual:'Checked by hand',stale:'Last update failed',
+  typical:'typical resale',retail:'Retail',lo:'Low',hi:'High',n:'Sample',chg:'30-day',noRange:'No range published',vsRetail:'of retail',
+  trend:'Price history',wait:k=>`${k} reading${k===1?'':'s'} so far. A trend line appears after the next weekly update.`,
+  manualTrend:'Refreshed by hand, so there is no price history for this item.',
+  source:'Source',est:'Estimate your piece',cond:'Condition',kit:'What’s included',
+  resale:'Likely resale',payout:'Consignment payout',
+  fine:c=>`Rule-of-thumb multipliers, not sourced data. Payout assumes a ${c}% platform commission.`,
+  noPrice:'No dollar prices were published for this item, so it can’t be estimated.',
+  grades:[['N','New, unworn'],['S','Like new, tried on only'],['A','Light wear, corners and hardware clean'],['AB','Normal wear, fine scratches'],['B','Visible wear, corner rub or tarnish'],['C','Heavy wear, needs repair']],
+  kits:{bag:[['Full set',1],['No receipt',.95],['Bag only',.87]],wj:[['Box & papers',1],['Papers only',.94],['Item only',.85]],rtw:[['With tags',1.12],['Worn, no tags',1],['Altered',.85]]},
+  more:k=>`Show the ${k} items in between`,less:'Show fewer',
+  ladT:'Retention across all three sections',ladL:'Typical resale price as a share of today’s retail. Click a row to open it.',par:'Dashed line = 100% of retail',
+  mT:'How this data is gathered',
+  m1:'Items marked “Auto-updated weekly” are scraped every week from Rolex Radar (weekly Chrono24 averages) and Purr (resale listings pooled from Rebag, The RealReal, Vestiaire Collective and eBay). Each run is saved, so price history builds up over time.',
+  m2:'The rest come from 2026 price guides and dealer listings and are checked by hand. Fashionphile, The RealReal and Vestiaire block automated access, so they are read through the aggregators above. Asking prices sit above what things actually sell for, and estimates are the source’s own judgement.',
+  sT:'Sources',fail:'Couldn’t load data.json. Run scrape.py, then republish the page with data.json alongside it.'},
+ zh:{brand:'流转',sub:'二手奢侈品行情',asof:d=>`更新于 <b>${d}</b> · 未注明均为美元`,
+  items:'个单品',medRet:'保值率中位数',best:'最保值',range:'价差最大',
+  take:(n,above,best,worst,sec)=>`${n} 个单品中有 ${above} 个二手价高于公价。${best} 最保值，${worst} 保值率最低。`+(sec==='rtw'?'成衣的数据来源较少，仅供粗略参考。':''),
+  sort:{ret:'按保值率',mid:'按二手价',brand:'按品牌'},q:'搜索品牌或款式',none:'这个板块里没有匹配的单品，试试输入品牌名。',
+  th:['单品','公价','二手典型价','保值率','数据类型'],
+  types:{ask:'挂牌价',mkt:'行情追踪',list:'挂牌汇总',sold:'实际成交',est:'公开估价'},
+  auto:'每周自动更新',manual:'人工核对',stale:'最近一次更新失败',
+  typical:'二手典型价',retail:'公价',lo:'低位',hi:'高位',n:'样本',chg:'30日',noRange:'来源未公布区间',vsRetail:'公价占比',
+  trend:'价格走势',wait:k=>`目前只有 ${k} 次记录，下次每周更新后会出现走势线。`,
+  manualTrend:'该单品为人工更新，暂无历史价格。',
+  source:'来源',est:'估算你的单品',cond:'成色',kit:'配件',
+  resale:'预估转售价',payout:'寄卖到手价',
+  fine:c=>`成色与配件系数为行业经验值，非来源数据。到手价按平台抽佣 ${c}% 计算。`,
+  noPrice:'来源没有给出具体金额，无法估算。',
+  grades:[['N','全新未使用'],['S','近新，仅试背/试戴'],['A','轻微使用，边角五金良好'],['AB','正常使用痕迹，细小划痕'],['B','明显使用，边角磨损或氧化'],['C','重度使用，需要修复']],
+  kits:{bag:[['全套',1],['缺票',.95],['裸包',.87]],wj:[['表盒+保卡',1],['仅保卡',.94],['裸表',.85]],rtw:[['带吊牌',1.12],['穿过无吊牌',1],['改过尺码',.85]]},
+  more:k=>`展开中间的 ${k} 个单品`,less:'收起',
+  ladT:'三大板块保值率总览',ladL:'二手典型价占当前公价的比例。点击任一行查看详情。',par:'虚线 = 100% 公价',
+  mT:'数据是怎么来的',
+  m1:'标注“每周自动更新”的单品，每周从 Rolex Radar（Chrono24 周均价）和 Purr（汇总 Rebag、The RealReal、Vestiaire Collective、eBay 的二手挂牌）抓取。每次结果都会保存，历史走势会逐步积累。',
+  m2:'其余单品来自 2026 年的价格指南和经销商挂牌，为人工核对。Fashionphile、The RealReal 和 Vestiaire 会拦截自动抓取，所以通过上述汇总网站读取它们的数据。挂牌价通常高于实际成交价，估价则是来源方自己的判断。',
+  sT:'来源',fail:'没能加载 data.json。请先运行 scrape.py，再把页面和 data.json 一起重新发布。'}
+};
+const GM=[1.12,1.05,1,.92,.83,.68];
+const COMM={bag:20,wj:15,rtw:40};
+
+const $=s=>document.querySelector(s);
+const store={get(k,d){try{return localStorage.getItem('relay-'+k)||d}catch(e){return d}},set(k,v){try{localStorage.setItem('relay-'+k,v)}catch(e){}}};
+let S={lang:store.get('lang','en'),sec:store.get('sec','bag'),sel:{},grade:2,kit:0,sort:'ret'};
+if(!SECS[S.sec])S.sec='bag';
+const L=()=>T[S.lang];
+const cur=i=>i.cur==='EUR'?'€':'$';
+const money=(v,i)=>cur(i)+Math.round(v).toLocaleString('en-US');
+const kfmt=(v,i)=>cur(i)+(v>=10000?(v/1000).toFixed(v>=100000?0:1)+'k':Math.round(v).toLocaleString('en-US'));
+const pctS=v=>(v>0?'+':'')+(v*100).toFixed(1)+'%';
+const nm=i=>S.lang==='zh'?i.zh:i.name;
+const bn=i=>S.lang==='zh'?i.zhb:i.brand;
+const median=a=>{const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+const fmtDate=d=>{if(!d)return '—';const t=new Date(d+(d.length===10?'T00:00:00':''));return isNaN(t)?d:t.toLocaleDateString(S.lang==='zh'?'zh-CN':'en-GB',{day:'numeric',month:'short',year:'numeric'})};
+const sel=()=>{const list=ITEMS.filter(i=>i.sec===S.sec);return list.find(i=>i.id===S.sel[S.sec])||[...list].sort((a,b)=>b.ret-a.ret)[0]};
+
+function prep(items){
+  items.forEach(i=>{
+    if(i.ret==null&&i.mid&&i.retail)i.ret=i.mid/i.retail;
+    const h=i.history||[];
+    if(i.chg==null&&h.length>1){
+      const last=new Date(h[h.length-1].d), ref=[...h].reverse().find(p=>(last-new Date(p.d))/864e5>=28);
+      if(ref)i.chg=h[h.length-1].mid/ref.mid-1;
+    }
+  });
+  return items.filter(i=>i.ret!=null);
+}
+
+function renderChrome(){
+  const t=L();
+  $('#app').dataset.lang=S.lang;document.documentElement.lang=S.lang==='zh'?'zh-CN':'en';
+  $('#brandname').textContent=t.brand;$('#brandsub').textContent=t.sub;$('#asof').innerHTML=t.asof(fmtDate(GENERATED.slice(0,10)));
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===S.lang));
+  $('#secnav').innerHTML=Object.entries(SECS).map(([k,s])=>{
+    const l=ITEMS.filter(i=>i.sec===k);
+    return `<button class="sec" data-sec="${k}" aria-pressed="${S.sec===k}" style="--sc:var(${s.c})">
+      <span class="k"><i style="background:var(${s.c})"></i>${l.length} ${t.items}</span>
+      <span class="t">${s[S.lang]}</span>
+      <span class="m">${t.medRet} <span class="num">${(median(l.map(i=>i.ret))*100).toFixed(0)}%</span></span></button>`}).join('');
+  const l=ITEMS.filter(i=>i.sec===S.sec), byRet=[...l].sort((a,b)=>b.ret-a.ret), best=byRet[0], worst=byRet[byRet.length-1];
+  const spread=l.filter(i=>i.lo!=null&&i.mid).sort((a,b)=>(b.hi-b.lo)/b.mid-(a.hi-a.lo)/a.mid)[0];
+  $('#summary').innerHTML=`
+    <div class="st"><span>${t.medRet}</span><b class="num">${(median(l.map(i=>i.ret))*100).toFixed(0)}%</b><small>${l.length} ${t.items}</small></div>
+    <div class="st"><span>${t.best}</span><b class="num pos">${(best.ret*100).toFixed(0)}%</b><small>${bn(best)} ${nm(best)}</small></div>
+    ${spread?`<div class="st"><span>${t.range}</span><b class="num">${kfmt(spread.lo,spread)}–${kfmt(spread.hi,spread)}</b><small>${bn(spread)} ${nm(spread)}</small></div>`:'<div></div>'}
+    <p>${t.take(l.length,l.filter(i=>i.ret>=1).length,`${bn(best)} ${nm(best)}`,`${bn(worst)} ${nm(worst)}`,S.sec)}</p>`;
+  $('#list-title').textContent=SECS[S.sec][S.lang];
+  $('#q').placeholder=t.q;
+  $('#sort').innerHTML=Object.entries(t.sort).map(([k,v])=>`<option value="${k}" ${k===S.sort?'selected':''}>${v}</option>`).join('');
+  $('#thead').innerHTML=`<tr><th>${t.th[0]}</th><th class="c-retail">${t.th[1]}</th><th>${t.th[2]}</th><th>${t.th[3]}</th><th class="c-type">${t.th[4]}</th></tr>`;
+}
+function renderRows(){
+  const t=L(), s=sel();
+  const key={ret:(a,b)=>b.ret-a.ret,mid:(a,b)=>(b.mid||0)-(a.mid||0),brand:(a,b)=>a.brand.localeCompare(b.brand)}[S.sort];
+  const q=$('#q').value.trim().toLowerCase();
+  const list=ITEMS.filter(i=>i.sec===S.sec&&(!q||[i.brand,i.zhb,i.name,i.zh].join(' ').toLowerCase().includes(q))).sort(key);
+  if(!list.length){$('#rows').innerHTML=`<tr><td colspan="5" class="empty">${t.none}</td></tr>`;return}
+  $('#rows').innerHTML=list.map(i=>`
+    <tr data-id="${i.id}" aria-selected="${i.id===s.id}" tabindex="0">
+      <td><div class="it-brand">${bn(i)}</div><div class="it-name">${nm(i)}</div></td>
+      <td class="c-retail num mut">${i.retail?money(i.retail,i):'—'}</td>
+      <td class="num">${i.mid?money(i.mid,i):'—'}</td>
+      <td><span class="ret num ${i.ret>=1?'hi':'lo'}">${(i.ret*100).toFixed(0)}%</span></td>
+      <td class="c-type"><span class="dtype">${t.types[i.type]}</span></td>
+    </tr>`).join('');
+}
+function rangeSvg(i){
+  const t=L(), W=560,H=92,Lp=14,Rp=14, vals=[i.mid,i.retail,i.lo,i.hi].filter(v=>v!=null);
+  let a=Math.min(...vals),b=Math.max(...vals); const pad=(b-a)*0.12||b*0.1; a=Math.max(0,a-pad);b=b+pad;
+  const x=v=>Lp+(v-a)/(b-a)*(W-Lp-Rp), y=44, col=i.ret>=1?'var(--pos)':'var(--ink)';
+  const band=i.lo!=null?`<rect x="${x(i.lo)}" y="${y-7}" width="${Math.max(2,x(i.hi)-x(i.lo))}" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="${x(i.lo)}" y="${y+26}" text-anchor="${x(i.lo)<60?'start':'middle'}" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${kfmt(i.lo,i)}</text>
+    <text x="${x(i.hi)}" y="${y+26}" text-anchor="${x(i.hi)>W-60?'end':'middle'}" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${kfmt(i.hi,i)}</text>`
+    :`<text x="${W/2}" y="${y+26}" text-anchor="middle" font-size="11" fill="var(--faint)">${t.noRange}</text>`;
+  const retailMark=i.retail?(()=>{const rx=x(i.retail), an=rx<70?'start':rx>W-70?'end':'middle';
+    return `<line x1="${rx}" x2="${rx}" y1="${y-24}" y2="${y+12}" stroke="var(--gold)" stroke-dasharray="3 3"/>
+    <text x="${rx}" y="${y-28}" text-anchor="${an}" font-size="11" fill="var(--gold)">${t.retail} ${kfmt(i.retail,i)}</text>`})():'';
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${t.lo}–${t.hi}">
+    <line x1="${Lp}" x2="${W-Rp}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width="1"/>
+    ${band}${retailMark}
+    <circle cx="${x(i.mid)}" cy="${y}" r="6" fill="${col}" stroke="var(--surface)" stroke-width="2"/>
+  </svg>`;
+}
+function trendSvg(i){
+  const t=L(), h=i.history||[];
+  if(!i.auto)return `<div class="trend"><div class="wait">${t.manualTrend}</div></div>`;
+  if(h.length<2)return `<div class="trend"><div class="th"><span>${t.trend}</span></div><div class="wait">${t.wait(h.length)}</div></div>`;
+  const W=560,H=150,Lp=52,Rp=10,Tp=10,Bp=24, v=h.map(p=>p.mid);
+  let a=Math.min(...v),b=Math.max(...v); const pad=(b-a)*0.15||b*0.03; a-=pad;b+=pad;
+  const x=k=>Lp+k*(W-Lp-Rp)/(h.length-1), y=val=>Tp+(1-(val-a)/(b-a))*(H-Tp-Bp);
+  const d=h.map((p,k)=>(k?'L':'M')+x(k).toFixed(1)+' '+y(p.mid).toFixed(1)).join(' ');
+  const up=v[v.length-1]>=v[0], col=up?'var(--pos)':'var(--neg)';
+  const ticks=[a+pad,(a+b)/2,b-pad].map(val=>`<line x1="${Lp}" x2="${W-Rp}" y1="${y(val)}" y2="${y(val)}" stroke="var(--line)"/><text x="${Lp-6}" y="${y(val)+4}" text-anchor="end" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${kfmt(val,i)}</text>`).join('');
+  const lab=(k,an)=>`<text x="${x(k)}" y="${H-6}" text-anchor="${an}" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${h[k].d.slice(5)}</text>`;
+  return `<div class="trend"><div class="th"><span>${t.trend}</span><span class="num ${up?'pos':'neg'}">${pctS(v[v.length-1]/v[0]-1)}</span></div>
+    <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${t.trend}">${ticks}
+    <path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="${x(h.length-1)}" cy="${y(v[v.length-1])}" r="4" fill="${col}" stroke="var(--surface)" stroke-width="2"/>
+    ${lab(0,'start')}${lab(h.length-1,'end')}</svg></div>`;
+}
+function renderDetail(){
+  const t=L(), i=sel(), hasP=i.mid!=null;
+  let quote='';
+  if(hasP){
+    const kits=t.kits[i.sec], gm=GM[S.grade], km=kits[Math.min(S.kit,kits.length-1)][1], v=i.mid*gm*km, c=COMM[i.sec];
+    quote=`<div class="field"><span>${t.cond}</span><div class="chips">${t.grades.map((g,k)=>`<button class="chip" data-grade="${k}" aria-pressed="${k===S.grade}">${g[0]}<small>×${GM[k].toFixed(2)}</small></button>`).join('')}</div>
+      <div class="hint">${t.grades[S.grade][0]} · ${t.grades[S.grade][1]}</div></div>
+    <div class="field"><span>${t.kit}</span><div class="chips">${kits.map((k,n)=>`<button class="chip" data-kit="${n}" aria-pressed="${n===Math.min(S.kit,kits.length-1)}">${k[0]}<small>×${k[1].toFixed(2)}</small></button>`).join('')}</div></div>
+    <div class="quote"><div><span>${t.resale}</span><b class="num">${kfmt(v*.95,i)} – ${kfmt(v*1.05,i)}</b></div>
+      <div><span>${t.payout}</span><b class="num">${money(v*(1-c/100),i)}</b></div>
+      <div class="fine">${t.fine(c)}</div></div>`;
+  } else quote=`<p class="hint">${t.noPrice}</p>`;
+  $('#detail').innerHTML=`
+    <div class="d-brand">${bn(i)}</div>
+    <div class="d-name">${nm(i)}</div>
+    <div class="badges"><span class="badge t">${t.types[i.type]}</span><span class="badge">${i.auto?t.auto:t.manual}</span><span class="badge num">${fmtDate(i.asof)}</span>
+      ${i.cur==='EUR'?'<span class="badge">EUR</span>':''}${i.stale?`<span class="badge warn">${t.stale}</span>`:''}</div>
+    <div class="d-price">${hasP?`<span class="big num">${money(i.mid,i)}</span><span class="lab">${t.typical}</span>`:''}
+      <span class="ret num ${i.ret>=1?'hi':'lo'}">${(i.ret*100).toFixed(0)}% ${t.vsRetail}</span></div>
+    ${hasP?`<div class="range">${rangeSvg(i)}</div>`:''}
+    <div class="stats">
+      <div><span>${t.retail}</span><b class="num">${i.retail?money(i.retail,i):'—'}</b></div>
+      <div><span>${t.n}</span><b class="num">${i.n??'—'}</b></div>
+      <div><span>${t.chg}</span><b class="num ${i.chg==null?'mut':i.chg>0?'pos':'neg'}">${i.chg==null?'—':pctS(i.chg)}</b></div>
+    </div>
+    ${trendSvg(i)}
+    <p class="note">${i.note[S.lang]}</p>
+    <div class="src">${t.source}: <a href="${i.src[1]}" target="_blank" rel="noopener">${i.src[0]}</a></div>
+    <div class="est"><h3>${t.est}</h3>${quote}</div>`;
+}
+function renderLadder(){
+  const t=L(), list=[...ITEMS].sort((a,b)=>b.ret-a.ret), max=Math.max(...list.map(i=>i.ret))*1.04, par=100/max;
+  $('#lad-title').textContent=t.ladT;$('#lad-lede').textContent=t.ladL;$('#parlab').textContent=t.par;
+  $('#legend').innerHTML=Object.values(SECS).map(s=>`<span><i style="background:var(${s.c})"></i>${s[S.lang]}</span>`).join('');
+  const TOP=12,BOT=8, cut=!S.ladAll&&list.length>TOP+BOT+4;
+  const shown=cut?[...list.slice(0,TOP),null,...list.slice(-BOT)]:list;
+  $('#lad').innerHTML=shown.map(i=>i===null?`<button class="lmore" data-ladall="1">${t.more(list.length-TOP-BOT)}</button>`:`<button class="lrow" data-jump="${i.id}">
+    <span class="ln">${bn(i)} ${nm(i)}</span>
+    <span class="track"><span class="bar" style="width:${(i.ret/max*100).toFixed(1)}%;background:var(${SECS[i.sec].c});opacity:${i.sec===S.sec?1:.45}"></span><span class="par" style="left:${par.toFixed(1)}%"></span></span>
+    <span class="lv num ${i.ret>=1?'pos':'mut'}">${(i.ret*100).toFixed(0)}%</span></button>`).join('')
+    +(S.ladAll&&list.length>TOP+BOT+4?`<button class="lmore" data-ladall="0">${t.less}</button>`:'');
+  const seen=new Set(), srcs=ITEMS.filter(i=>!seen.has(i.src[0])&&seen.add(i.src[0]));
+  $('#method').innerHTML=`<div><h2>${t.mT}</h2><p>${t.m1}</p><p>${t.m2}</p></div>
+    <div><h2>${t.sT}</h2><ul>${srcs.map(i=>`<li><a href="${i.src[1]}" target="_blank" rel="noopener">${i.src[0]}</a></li>`).join('')}
+    <li><a href="https://mygemma.com/blogs/news/luxury-resale-index-2026" target="_blank" rel="noopener">myGemma Luxury Resale Index 2026</a></li>
+    <li><a href="https://www.rebag.com/clair-report/" target="_blank" rel="noopener">Rebag Clair Report</a></li></ul></div>`;
+}
+function renderAll(){renderChrome();renderRows();renderDetail();renderLadder()}
+
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button[data-lang],[data-sec],[data-id],[data-grade],[data-kit],[data-jump],[data-ladall]');if(!b||!ITEMS.length)return;
+  const d=b.dataset;
+  if(d.ladall){S.ladAll=d.ladall==='1';renderLadder()}
+  else if(d.lang){S.lang=d.lang;store.set('lang',S.lang);renderAll()}
+  else if(d.sec){S.sec=d.sec;store.set('sec',S.sec);S.kit=0;$('#q').value='';renderAll()}
+  else if(d.id){S.sel[S.sec]=d.id;S.grade=2;S.kit=0;renderRows();renderDetail();
+    if(window.innerWidth<=960)$('#detail').scrollIntoView({behavior:'smooth',block:'start'})}
+  else if(d.grade){S.grade=+d.grade;renderDetail()}
+  else if(d.kit){S.kit=+d.kit;renderDetail()}
+  else if(d.jump){const i=ITEMS.find(x=>x.id===d.jump);S.sec=i.sec;S.sel[i.sec]=i.id;store.set('sec',S.sec);S.grade=2;S.kit=0;renderAll();
+    $('.main').scrollIntoView({behavior:'smooth',block:'start'})}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('tr[data-id]'))e.target.click()});
+$('#sort').addEventListener('change',e=>{S.sort=e.target.value;renderRows()});
+$('#q').addEventListener('input',()=>{if(ITEMS.length)renderRows()});
+
+fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{
+  GENERATED=d.generated||'';ITEMS=prep(d.items||[]);renderAll();
+}).catch(()=>{$('.main').innerHTML=`<p class="loadmsg">${L().fail}</p>`});
+</script>
+

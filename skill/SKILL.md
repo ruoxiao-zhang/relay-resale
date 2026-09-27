@@ -6,7 +6,7 @@ description: Refresh the Relay pre-owned luxury price ledger (C:\Users\lily1\rel
 # Refresh the Relay resale ledger
 
 Live page: https://claude.ai/artifact/8s3Twh1ajkrEErnRqQsQ9A
-Local copy: `C:\Users\lily1\relay-resale`
+Local copy: `C:\Users\lily1\relay-resale` (git repo → https://github.com/ruoxiao-zhang/relay-resale)
 
 **The artifact is the source of truth.** A cloud routine ("Relay resale ledger – weekly refresh", `trig_016y8JjNX9vdeWjQgBYMGA4Q`, Mondays 09:00 Asia/Shanghai) reads the working files out of the artifact, runs the scraper and republishes them. The local copy can be behind, so always sync first and always publish the working files back.
 
@@ -42,7 +42,9 @@ The local Windows task `RelayResaleScrape` is disabled on purpose; running it wo
    `files` = `{"data.json": "C:\\Users\\lily1\\relay-resale\\data.json", "data/history.jsonl": {"from": "C:\\Users\\lily1\\relay-resale\\data\\history.jsonl", "contentType": "text/plain"}, "src/scrape.py": {"from": "C:\\Users\\lily1\\relay-resale\\scrape.py", "contentType": "text/plain"}, "src/sources.json": "C:\\Users\\lily1\\relay-resale\\sources.json", "src/index.html.txt": {"from": "C:\\Users\\lily1\\relay-resale\\index.html", "contentType": "text/plain"}}`.
    Leaving out a `src/` file after changing it means next Monday's routine runs the old version.
 
-6. **Report** in the user's language: items updated, the biggest movers (from history), anything that failed or looked wrong, and which manual items you re-sourced (with links).
+6. **Commit to GitHub.** The project folder is a git repo pushed to https://github.com/ruoxiao-zhang/relay-resale (private). Git lives at `C:\Program Files\Git\cmd` (prepend it to `$env:Path` if `git` isn't found). Copy this skill file to `skill/SKILL.md` if it changed, then `git add -A`, commit with a one-line message saying what changed (e.g. `Weekly data 2026-10-05; re-sourced Santos, Love`), and `git push`. The weekly cloud routine does not touch GitHub, so this step is what keeps the repo current.
+
+7. **Report** in the user's language: items updated, the biggest movers (from history), anything that failed or looked wrong, and which manual items you re-sourced (with links).
 
 ## Debugging the weekly routine
 

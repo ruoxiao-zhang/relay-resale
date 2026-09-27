@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T13:16+08:00",
+ "generated": "2026-09-27T15:11+08:00",
  "items": [
   {
    "id": "birkin25",
@@ -78,6 +78,7 @@
    "n": 477,
    "chg": null,
    "retail": 11950,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -113,6 +114,7 @@
    "n": 211,
    "chg": null,
    "retail": 2700,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -148,6 +150,7 @@
    "n": 120,
    "chg": null,
    "retail": 2950,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -183,6 +186,7 @@
    "n": null,
    "chg": null,
    "retail": 4800,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -210,6 +214,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌。"
    },
+   "retail": 4700,
+   "retail_src": [
+    "The Row bag prices 2026",
+    "https://streetstylis.com/the-row-bag-prices/"
+   ],
+   "retail_note": {
+    "en": "Retail is the Margaux 15 in leather ($4,700). The Margaux left third-party stores in 2025 and now sells only in The Row’s boutiques, which keeps resale high.",
+    "zh": "公价取皮革 Margaux 15 的 4700 美元。Margaux 2025 年起只在 The Row 自营门店销售，二手价因此偏高。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 4919,
@@ -217,11 +231,11 @@
    "hi": 6135,
    "n": 163,
    "chg": null,
-   "retail": 4500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0931,
+   "ret": 1.0466,
    "history": [
     {
      "d": "2026-09-27",
@@ -245,6 +259,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 990,
+   "retail_src": [
+    "Sukey (discontinued)",
+    "https://www.collectorsquare.com/en/bags/gucci/sukey/"
+   ],
+   "retail_note": {
+    "en": "Discontinued. Retail is the last medium price, $990.",
+    "zh": "已停产，公价为停产前中号售价 990 美元。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 681,
@@ -252,11 +276,11 @@
    "hi": 880,
    "n": 38,
    "chg": null,
-   "retail": 650,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0477,
+   "ret": 0.6879,
    "history": [
     {
      "d": "2026-09-27",
@@ -280,6 +304,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 1800,
+   "retail_src": [
+    "ASC Resale · Small Cabas Thais retail",
+    "https://asecondchanceresale.com/products/celine-striped-canvas-small-cabas-thais-bag"
+   ],
+   "retail_note": {
+    "en": "Retail is the small Cabas Thais at $1,800; some versions list at $2,000.",
+    "zh": "公价取小号 1800 美元；部分款式为 2000 美元。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 1493,
@@ -287,11 +321,11 @@
    "hi": 1987,
    "n": 38,
    "chg": null,
-   "retail": 1400,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0664,
+   "ret": 0.8294,
    "history": [
     {
      "d": "2026-09-27",
@@ -323,6 +357,7 @@
    "n": 124,
    "chg": null,
    "retail": 3450,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -358,6 +393,7 @@
    "n": 234,
    "chg": null,
    "retail": 3250,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -393,6 +429,7 @@
    "n": 98,
    "chg": null,
    "retail": 1850,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -428,6 +465,7 @@
    "n": 66,
    "chg": null,
    "retail": 6700,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -463,6 +501,7 @@
    "n": 97,
    "chg": null,
    "retail": 4900,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -498,6 +537,7 @@
    "n": 69,
    "chg": null,
    "retail": 2000,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -533,6 +573,7 @@
    "n": 99,
    "chg": null,
    "retail": 650,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -568,6 +609,7 @@
    "n": 94,
    "chg": null,
    "retail": 2800,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -603,6 +645,7 @@
    "n": 122,
    "chg": null,
    "retail": 2450,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -638,10 +681,11 @@
    "n": 97,
    "chg": null,
    "retail": 3450,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -665,6 +709,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 2275,
+   "retail_src": [
+    "Goyard price list 2026",
+    "https://collectorscage.com/blogs/guides/goyard-bag-prices-2026-full-price-guide-us-europe-and-why-pre-owned-wi"
+   ],
+   "retail_note": {
+    "en": "Goyard publishes no prices; $2,275 is the reported PM boutique price. Goyard is one of the few brands that routinely resells above retail (Rebag’s 2025 Clair Report: 132% average).",
+    "zh": "Goyard 不公开价格，2275 美元为报道的 PM 门店价。Goyard 是少数常年二手高于公价的品牌（Rebag 2025 报告平均 132%）。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 2941,
@@ -672,11 +726,11 @@
    "hi": 3179,
    "n": 151,
    "chg": null,
-   "retail": 2850,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0319,
+   "ret": 1.2927,
    "history": [
     {
      "d": "2026-09-27",
@@ -700,6 +754,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 4900,
+   "retail_src": [
+    "The Row · Marlo 12",
+    "https://www.therow.com/products/marlo-12-black-ans"
+   ],
+   "retail_note": {
+    "en": "Retail is the Marlo 12 at $4,900; the 17 is about $5,800. Listings pool all sizes.",
+    "zh": "公价取 Marlo 12 的 4900 美元；17 号约 5800 美元。挂牌合并了各尺寸。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 4874,
@@ -707,11 +771,11 @@
    "hi": 5320,
    "n": 101,
    "chg": null,
-   "retail": 4250,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.1468,
+   "ret": 0.9947,
    "history": [
     {
      "d": "2026-09-27",
@@ -743,6 +807,7 @@
    "n": 129,
    "chg": null,
    "retail": 2000,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -778,6 +843,7 @@
    "n": 30,
    "chg": null,
    "retail": 2500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -813,6 +879,7 @@
    "n": 121,
    "chg": null,
    "retail": 2700,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -848,6 +915,7 @@
    "n": 124,
    "chg": null,
    "retail": 2100,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -883,6 +951,7 @@
    "n": 125,
    "chg": null,
    "retail": 4600,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -918,10 +987,11 @@
    "n": 121,
    "chg": null,
    "retail": 3300,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -953,6 +1023,7 @@
    "n": 26,
    "chg": null,
    "retail": 5900,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -980,6 +1051,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail_ambiguous": true,
+   "retail_src": [
+    "Celine · Mini Besace Triomphe",
+    "https://www.celine.com/en-us/celine-shop-women/mini-bags/triomphe-canvas/mini-besace-in-triomphe-canvas-and-calfskin-196702BZJ.04LU.html"
+   ],
+   "retail_note": {
+    "en": "The mini is $1,300–1,350 and larger sizes cost more; the listings pool all sizes, so no single retention figure is meaningful.",
+    "zh": "迷你款 1300–1350 美元，大尺寸更贵；挂牌合并了各尺寸，无法给出有意义的保值率。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 2298,
@@ -988,10 +1069,11 @@
    "n": 151,
    "chg": null,
    "retail": 2050,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.121,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -1023,6 +1105,7 @@
    "n": 211,
    "chg": null,
    "retail": 3200,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1058,6 +1141,7 @@
    "n": 27,
    "chg": null,
    "retail": 3000,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1093,6 +1177,7 @@
    "n": 64,
    "chg": null,
    "retail": 4300,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1128,6 +1213,7 @@
    "n": 33,
    "chg": null,
    "retail": 1150,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1163,6 +1249,7 @@
    "n": 38,
    "chg": null,
    "retail": 2840,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1198,6 +1285,7 @@
    "n": 169,
    "chg": null,
    "retail": 3450,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1233,6 +1321,7 @@
    "n": 33,
    "chg": null,
    "retail": 3150,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1260,6 +1349,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 3750,
+   "retail_src": [
+    "Prada Explore price guide",
+    "https://collectorscage.com/blogs/guides/prada-bag-prices-2026-full-price-guide-us-europe-and-why-pre-owned-win"
+   ],
+   "retail_note": {
+    "en": "Retail is the medium in nappa leather ($3,750). The Re-Nylon version is $2,550, so listings that mix both skew the figure.",
+    "zh": "公价取小羊皮中号 3750 美元。尼龙款为 2550 美元，挂牌混合两种材质会有偏差。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 3500,
@@ -1267,11 +1366,11 @@
    "hi": 3850,
    "n": 37,
    "chg": null,
-   "retail": 3400,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0294,
+   "ret": 0.9333,
    "history": [
     {
      "d": "2026-09-27",
@@ -1303,6 +1402,7 @@
    "n": 38,
    "chg": null,
    "retail": 2600,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1338,6 +1438,7 @@
    "n": 98,
    "chg": null,
    "retail": 3900,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1365,6 +1466,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 4600,
+   "retail_src": [
+    "FWRD · Bottega Veneta Hop",
+    "https://www.fwrd.com/brand-bottega-veneta-bags-hobos/2cb362/"
+   ],
+   "retail_note": {
+    "en": "Retail is the medium Hop at $4,600; the small is $5,000.",
+    "zh": "公价取中号 Hop 4600 美元；小号 5000 美元。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 4244,
@@ -1372,11 +1483,11 @@
    "hi": 4603.5,
    "n": 61,
    "chg": null,
-   "retail": 3900,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0882,
+   "ret": 0.9226,
    "history": [
     {
      "d": "2026-09-27",
@@ -1408,6 +1519,7 @@
    "n": 31,
    "chg": null,
    "retail": 1950,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1443,6 +1555,7 @@
    "n": 135,
    "chg": null,
    "retail": 1350,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1478,6 +1591,7 @@
    "n": 61,
    "chg": null,
    "retail": 1200,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1513,6 +1627,7 @@
    "n": 91,
    "chg": null,
    "retail": 3400,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1548,6 +1663,7 @@
    "n": 43,
    "chg": null,
    "retail": 5500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1583,6 +1699,7 @@
    "n": 25,
    "chg": null,
    "retail": 4400,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1618,6 +1735,7 @@
    "n": 104,
    "chg": null,
    "retail": 2950,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1653,6 +1771,7 @@
    "n": 37,
    "chg": null,
    "retail": 4300,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1688,6 +1807,7 @@
    "n": 121,
    "chg": null,
    "retail": 1350,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1723,6 +1843,7 @@
    "n": 34,
    "chg": null,
    "retail": 3650,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1758,6 +1879,7 @@
    "n": 42,
    "chg": null,
    "retail": 5500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1793,6 +1915,7 @@
    "n": 124,
    "chg": null,
    "retail": 3850,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1828,6 +1951,7 @@
    "n": 394,
    "chg": null,
    "retail": 4100,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1863,6 +1987,7 @@
    "n": 37,
    "chg": null,
    "retail": 2500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1898,10 +2023,11 @@
    "n": 91,
    "chg": null,
    "retail": 3850,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -1933,6 +2059,7 @@
    "n": 121,
    "chg": null,
    "retail": 3300,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -1968,6 +2095,7 @@
    "n": 29,
    "chg": null,
    "retail": 4200,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2003,10 +2131,11 @@
    "n": 77,
    "chg": null,
    "retail": 3400,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -2030,6 +2159,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 2850,
+   "retail_src": [
+    "Loulou review 2026",
+    "https://www.lifewithmar.com/fashion/saint-laurent-loulou-review"
+   ],
+   "retail_note": {
+    "en": "Retail is the medium at $2,850; the updated version lists at $3,200.",
+    "zh": "公价取中号 2850 美元；新版为 3200 美元。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 2290,
@@ -2037,11 +2176,11 @@
    "hi": 3100,
    "n": 37,
    "chg": null,
-   "retail": 2250,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0178,
+   "ret": 0.8035,
    "history": [
     {
      "d": "2026-09-27",
@@ -2073,6 +2212,7 @@
    "n": 37,
    "chg": null,
    "retail": 3500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2108,6 +2248,7 @@
    "n": 67,
    "chg": null,
    "retail": 4500,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2143,10 +2284,11 @@
    "n": 61,
    "chg": null,
    "retail": 4500,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -2178,10 +2320,11 @@
    "n": 93,
    "chg": null,
    "retail": 3550,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -2213,10 +2356,11 @@
    "n": 80,
    "chg": null,
    "retail": 3350,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -2240,6 +2384,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail_ambiguous": true,
+   "retail_src": [
+    "Louis Vuitton · Pochette Hills",
+    "https://us.louisvuitton.com/eng-us/products/pochette-hills-monogram-nvprod7280238v/M27509"
+   ],
+   "retail_note": {
+    "en": "Retail runs from $1,860 (denim) and $1,900 (monogram) to $2,990 (leather), and the listings mix all of them, so no single retention figure is meaningful.",
+    "zh": "公价从 1860 美元（牛仔）、1900 美元（老花）到 2990 美元（皮革）不等，挂牌混合了各版本，无法给出有意义的保值率。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 2300,
@@ -2248,10 +2402,11 @@
    "n": 61,
    "chg": null,
    "retail": 2000,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.15,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -2283,6 +2438,7 @@
    "n": 37,
    "chg": null,
    "retail": 3250,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2318,6 +2474,7 @@
    "n": 121,
    "chg": null,
    "retail": 2600,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2353,6 +2510,7 @@
    "n": 121,
    "chg": null,
    "retail": 2850,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2388,6 +2546,7 @@
    "n": 219,
    "chg": null,
    "retail": 4200,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2423,10 +2582,11 @@
    "n": 65,
    "chg": null,
    "retail": 4900,
+   "retail_unverified": true,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.0,
+   "ret": null,
    "history": [
     {
      "d": "2026-09-27",
@@ -2450,6 +2610,16 @@
     "en": "Aggregate of resale listings across Rebag, The RealReal, Vestiaire Collective and eBay, all sizes and materials combined. Retail is the source’s figure and can lag recent price rises, which flatters retention.",
     "zh": "汇总自 Rebag、The RealReal、Vestiaire Collective 和 eBay 的二手挂牌，合并全部尺寸和材质。公价取自来源，可能没跟上最近的涨价，保值率会因此偏高。"
    },
+   "retail": 3650,
+   "retail_src": [
+    "The Row bag prices 2026",
+    "https://streetstylis.com/the-row-bag-prices/"
+   ],
+   "retail_note": {
+    "en": "Retail is $3,650. The Margaux now sells only in The Row’s own boutiques and resells well above retail.",
+    "zh": "公价 3650 美元。Margaux 现在只在 The Row 自营门店销售，二手价明显高于公价。"
+   },
+   "retail_checked": "2026-09-27",
    "type": "list",
    "auto": true,
    "mid": 4998,
@@ -2457,11 +2627,11 @@
    "hi": 6950,
    "n": 97,
    "chg": null,
-   "retail": 4400,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
-   "ret": 1.1359,
+   "ret": 1.3693,
    "history": [
     {
      "d": "2026-09-27",
@@ -2493,6 +2663,7 @@
    "n": 61,
    "chg": null,
    "retail": 1650,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2528,6 +2699,7 @@
    "n": 272,
    "chg": null,
    "retail": 2850,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2563,6 +2735,7 @@
    "n": null,
    "chg": 0.023,
    "retail": 15100,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2598,6 +2771,7 @@
    "hi": 34325,
    "n": null,
    "chg": -0.021,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2633,6 +2807,7 @@
    "n": null,
    "chg": -0.022,
    "retail": 10700,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2668,6 +2843,7 @@
    "n": null,
    "chg": -0.028,
    "retail": 10100,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2703,6 +2879,7 @@
    "n": null,
    "chg": -0.021,
    "retail": 8550,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2738,6 +2915,7 @@
    "n": null,
    "chg": null,
    "retail": 6150,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,
@@ -2773,6 +2951,7 @@
    "n": null,
    "chg": -0.017,
    "retail": 15900,
+   "retail_unverified": false,
    "asof": "2026-09-27",
    "fetched": "2026-09-27",
    "stale": false,

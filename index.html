@@ -156,6 +156,9 @@ tbody tr:last-child td{border-bottom:0}
 .method ul{padding-left:18px;margin:0}
 .method li{margin-bottom:4px}
 .badge.warn{border-color:var(--red);color:var(--red)}
+.ret.warn{background:none;border:1px dashed var(--faint);color:var(--muted);font-size:11px;white-space:nowrap}
+.caveat{font-size:13px;color:var(--ink);background:var(--surface-2);border-radius:4px;padding:8px 10px;margin:12px 0 0;max-width:60ch}
+.retfoot{font-size:12px;color:var(--muted);margin-top:8px}
 .trend{margin-top:14px}
 .trend .th{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
 .trend svg{width:100%;height:auto;display:block;margin-top:4px}
@@ -178,6 +181,7 @@ tbody tr:last-child td{border-bottom:0}
       <div class="sec-head"><h2 id="list-title"></h2>
         <div class="tools"><input id="q" type="search" aria-label="Search"><select id="sort" aria-label="Sort"></select></div></div>
       <div class="tbl-wrap"><table><thead id="thead"></thead><tbody id="rows"></tbody></table></div>
+      <div class="retfoot" id="retfoot"></div>
     </section>
     <aside class="detail" id="detail" aria-live="polite"></aside>
   </div>
@@ -205,6 +209,11 @@ const T={
   th:['Item','Retail','Typical resale','Retention','Data'],
   types:{ask:'Asking prices',mkt:'Market tracker',list:'Listing aggregate',sold:'Completed sale',est:'Published estimate'},
   auto:'Auto-updated weekly',manual:'Checked by hand',stale:'Last update failed',
+  unv:'Retail unverified',amb:'Retail unclear',excluded:k=>`${k} without a reliable retention figure`,
+  pooled:'Asking prices · sizes pooled',retailSrc:'Retail source',
+  unvNote:'The source’s median resale price equals its retail price exactly, which almost never happens with real listings. Retention is hidden until the figure can be checked.',
+  highNote:'Above-retail readings from listing aggregates tend to be overstated: they are asking prices, not sales, and they pool every size and material against a single retail price.',
+  foot:'* Listing-based figure above retail; likely overstated. See the item for details.',
   typical:'typical resale',retail:'Retail',lo:'Low',hi:'High',n:'Sample',chg:'30-day',noRange:'No range published',vsRetail:'of retail',
   trend:'Price history',wait:k=>`${k} reading${k===1?'':'s'} so far. A trend line appears after the next weekly update.`,
   manualTrend:'Refreshed by hand, so there is no price history for this item.',
@@ -227,6 +236,11 @@ const T={
   th:['单品','公价','二手典型价','保值率','数据类型'],
   types:{ask:'挂牌价',mkt:'行情追踪',list:'挂牌汇总',sold:'实际成交',est:'公开估价'},
   auto:'每周自动更新',manual:'人工核对',stale:'最近一次更新失败',
+  unv:'公价待核实',amb:'公价不确定',excluded:k=>`${k} 个无可靠保值率`,
+  pooled:'挂牌价 · 多尺寸合并',retailSrc:'公价来源',
+  unvNote:'来源给出的二手中位价与公价完全相同，真实挂牌数据几乎不可能出现这种情况。在核实之前不显示保值率。',
+  highNote:'挂牌汇总数据得出的"高于公价"往往偏高：它们是卖家要价而不是成交价，而且把各尺寸、各材质的挂牌与单一公价对比。',
+  foot:'* 基于挂牌价且高于公价，可能偏高，详见单品说明。',
   typical:'二手典型价',retail:'公价',lo:'低位',hi:'高位',n:'样本',chg:'30日',noRange:'来源未公布区间',vsRetail:'公价占比',
   trend:'价格走势',wait:k=>`目前只有 ${k} 次记录，下次每周更新后会出现走势线。`,
   manualTrend:'该单品为人工更新，暂无历史价格。',
@@ -259,18 +273,26 @@ const nm=i=>S.lang==='zh'?i.zh:i.name;
 const bn=i=>S.lang==='zh'?i.zhb:i.brand;
 const median=a=>{const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
 const fmtDate=d=>{if(!d)return '—';const t=new Date(d+(d.length===10?'T00:00:00':''));return isNaN(t)?d:t.toLocaleDateString(S.lang==='zh'?'zh-CN':'en-GB',{day:'numeric',month:'short',year:'numeric'})};
-const sel=()=>{const list=ITEMS.filter(i=>i.sec===S.sec);return list.find(i=>i.id===S.sel[S.sec])||[...list].sort((a,b)=>b.ret-a.ret)[0]};
+const hasRet=i=>i.ret!=null;
+const byRetDesc=(a,b)=>(hasRet(b)?b.ret:-1)-(hasRet(a)?a.ret:-1);
+const sel=()=>{const list=ITEMS.filter(i=>i.sec===S.sec);return list.find(i=>i.id===S.sel[S.sec])||[...list].sort(byRetDesc)[0]};
+// listing aggregates (Purr) overstate retention: asking prices, all sizes pooled
+const overstated=i=>i.source==='purr'&&hasRet(i)&&i.ret>=1;
+function retCell(i,t,withLabel){
+  if(!hasRet(i))return `<span class="ret warn">${i.retail_ambiguous?t.amb:t.unv}</span>`;
+  return `<span class="ret num ${i.ret>=1?'hi':'lo'}">${(i.ret*100).toFixed(0)}%${overstated(i)?'*':''}${withLabel?' '+t.vsRetail:''}</span>`;
+}
 
 function prep(items){
   items.forEach(i=>{
-    if(i.ret==null&&i.mid&&i.retail)i.ret=i.mid/i.retail;
+    if(i.ret==null&&i.mid&&i.retail&&!i.retail_unverified&&!i.retail_ambiguous)i.ret=i.mid/i.retail;
     const h=i.history||[];
     if(i.chg==null&&h.length>1){
       const last=new Date(h[h.length-1].d), ref=[...h].reverse().find(p=>(last-new Date(p.d))/864e5>=28);
       if(ref)i.chg=h[h.length-1].mid/ref.mid-1;
     }
   });
-  return items.filter(i=>i.ret!=null);
+  return items.filter(i=>i.ret!=null||i.mid!=null);
 }
 
 function renderChrome(){
@@ -279,15 +301,15 @@ function renderChrome(){
   $('#brandname').textContent=t.brand;$('#brandsub').textContent=t.sub;$('#asof').innerHTML=t.asof(fmtDate(GENERATED.slice(0,10)));
   document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===S.lang));
   $('#secnav').innerHTML=Object.entries(SECS).map(([k,s])=>{
-    const l=ITEMS.filter(i=>i.sec===k);
+    const l=ITEMS.filter(i=>i.sec===k&&hasRet(i));
     return `<button class="sec" data-sec="${k}" aria-pressed="${S.sec===k}" style="--sc:var(${s.c})">
       <span class="k"><i style="background:var(${s.c})"></i>${l.length} ${t.items}</span>
       <span class="t">${s[S.lang]}</span>
       <span class="m">${t.medRet} <span class="num">${(median(l.map(i=>i.ret))*100).toFixed(0)}%</span></span></button>`}).join('');
-  const l=ITEMS.filter(i=>i.sec===S.sec), byRet=[...l].sort((a,b)=>b.ret-a.ret), best=byRet[0], worst=byRet[byRet.length-1];
+  const all=ITEMS.filter(i=>i.sec===S.sec), l=all.filter(hasRet), byRet=[...l].sort(byRetDesc), best=byRet[0], worst=byRet[byRet.length-1];
   const spread=l.filter(i=>i.lo!=null&&i.mid).sort((a,b)=>(b.hi-b.lo)/b.mid-(a.hi-a.lo)/a.mid)[0];
   $('#summary').innerHTML=`
-    <div class="st"><span>${t.medRet}</span><b class="num">${(median(l.map(i=>i.ret))*100).toFixed(0)}%</b><small>${l.length} ${t.items}</small></div>
+    <div class="st"><span>${t.medRet}</span><b class="num">${(median(l.map(i=>i.ret))*100).toFixed(0)}%</b><small>${all.length} ${t.items}${all.length>l.length?` · ${t.excluded(all.length-l.length)}`:''}</small></div>
     <div class="st"><span>${t.best}</span><b class="num pos">${(best.ret*100).toFixed(0)}%</b><small>${bn(best)} ${nm(best)}</small></div>
     ${spread?`<div class="st"><span>${t.range}</span><b class="num">${kfmt(spread.lo,spread)}–${kfmt(spread.hi,spread)}</b><small>${bn(spread)} ${nm(spread)}</small></div>`:'<div></div>'}
     <p>${t.take(l.length,l.filter(i=>i.ret>=1).length,`${bn(best)} ${nm(best)}`,`${bn(worst)} ${nm(worst)}`,S.sec)}</p>`;
@@ -298,16 +320,17 @@ function renderChrome(){
 }
 function renderRows(){
   const t=L(), s=sel();
-  const key={ret:(a,b)=>b.ret-a.ret,mid:(a,b)=>(b.mid||0)-(a.mid||0),brand:(a,b)=>a.brand.localeCompare(b.brand)}[S.sort];
+  const key={ret:byRetDesc,mid:(a,b)=>(b.mid||0)-(a.mid||0),brand:(a,b)=>a.brand.localeCompare(b.brand)}[S.sort];
   const q=$('#q').value.trim().toLowerCase();
   const list=ITEMS.filter(i=>i.sec===S.sec&&(!q||[i.brand,i.zhb,i.name,i.zh].join(' ').toLowerCase().includes(q))).sort(key);
+  $('#retfoot').textContent=list.some(overstated)?t.foot:'';
   if(!list.length){$('#rows').innerHTML=`<tr><td colspan="5" class="empty">${t.none}</td></tr>`;return}
   $('#rows').innerHTML=list.map(i=>`
     <tr data-id="${i.id}" aria-selected="${i.id===s.id}" tabindex="0">
       <td><div class="it-brand">${bn(i)}</div><div class="it-name">${nm(i)}</div></td>
       <td class="c-retail num mut">${i.retail?money(i.retail,i):'—'}</td>
       <td class="num">${i.mid?money(i.mid,i):'—'}</td>
-      <td><span class="ret num ${i.ret>=1?'hi':'lo'}">${(i.ret*100).toFixed(0)}%</span></td>
+      <td>${retCell(i,t,false)}</td>
       <td class="c-type"><span class="dtype">${t.types[i.type]}</span></td>
     </tr>`).join('');
 }
@@ -360,10 +383,10 @@ function renderDetail(){
   $('#detail').innerHTML=`
     <div class="d-brand">${bn(i)}</div>
     <div class="d-name">${nm(i)}</div>
-    <div class="badges"><span class="badge t">${t.types[i.type]}</span><span class="badge">${i.auto?t.auto:t.manual}</span><span class="badge num">${fmtDate(i.asof)}</span>
+    <div class="badges"><span class="badge t">${t.types[i.type]}</span>${i.source==='purr'?`<span class="badge">${t.pooled}</span>`:''}<span class="badge">${i.auto?t.auto:t.manual}</span><span class="badge num">${fmtDate(i.asof)}</span>
       ${i.cur==='EUR'?'<span class="badge">EUR</span>':''}${i.stale?`<span class="badge warn">${t.stale}</span>`:''}</div>
     <div class="d-price">${hasP?`<span class="big num">${money(i.mid,i)}</span><span class="lab">${t.typical}</span>`:''}
-      <span class="ret num ${i.ret>=1?'hi':'lo'}">${(i.ret*100).toFixed(0)}% ${t.vsRetail}</span></div>
+      ${retCell(i,t,true)}</div>
     ${hasP?`<div class="range">${rangeSvg(i)}</div>`:''}
     <div class="stats">
       <div><span>${t.retail}</span><b class="num">${i.retail?money(i.retail,i):'—'}</b></div>
@@ -371,12 +394,16 @@ function renderDetail(){
       <div><span>${t.chg}</span><b class="num ${i.chg==null?'mut':i.chg>0?'pos':'neg'}">${i.chg==null?'—':pctS(i.chg)}</b></div>
     </div>
     ${trendSvg(i)}
+    ${!hasRet(i)&&i.retail_unverified?`<p class="caveat">${t.unvNote}</p>`:''}
+    ${overstated(i)?`<p class="caveat">${t.highNote}</p>`:''}
     <p class="note">${i.note[S.lang]}</p>
-    <div class="src">${t.source}: <a href="${i.src[1]}" target="_blank" rel="noopener">${i.src[0]}</a></div>
+    ${i.retail_note?`<p class="note">${i.retail_note[S.lang]}</p>`:''}
+    <div class="src">${t.source}: <a href="${i.src[1]}" target="_blank" rel="noopener">${i.src[0]}</a>
+      ${i.retail_src?`<br>${t.retailSrc}: <a href="${i.retail_src[1]}" target="_blank" rel="noopener">${i.retail_src[0]}</a>${i.retail_checked?` · ${fmtDate(i.retail_checked)}`:''}`:''}</div>
     <div class="est"><h3>${t.est}</h3>${quote}</div>`;
 }
 function renderLadder(){
-  const t=L(), list=[...ITEMS].sort((a,b)=>b.ret-a.ret), max=Math.max(...list.map(i=>i.ret))*1.04, par=100/max;
+  const t=L(), list=ITEMS.filter(hasRet).sort(byRetDesc), max=Math.max(...list.map(i=>i.ret))*1.04, par=100/max;
   $('#lad-title').textContent=t.ladT;$('#lad-lede').textContent=t.ladL;$('#parlab').textContent=t.par;
   $('#legend').innerHTML=Object.values(SECS).map(s=>`<span><i style="background:var(${s.c})"></i>${s[S.lang]}</span>`).join('');
   const TOP=12,BOT=8, cut=!S.ladAll&&list.length>TOP+BOT+4;

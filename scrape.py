@@ -169,6 +169,9 @@ def main():
                     item[k] = r[k]
                 if c.get("retail") is None and r["retail"]:
                     item["retail"] = r["retail"]
+                # A listing median that lands exactly on the source's own retail figure is almost
+                # never real (Purr appears to fall back to retail when data is thin).
+                item["retail_unverified"] = bool(c["source"] == "purr" and r["retail"] and r["mid"] == r["retail"])
                 item["asof"] = r["asof"] or today
                 item["fetched"] = today
                 item["stale"] = False
@@ -180,14 +183,17 @@ def main():
             except (urllib.error.URLError, ValueError, RuntimeError, TimeoutError) as e:
                 p = prev.get(c["id"])
                 if p:
-                    for k in ("mid", "lo", "hi", "n", "chg", "retail", "asof", "fetched"):
+                    for k in ("mid", "lo", "hi", "n", "chg", "retail", "asof", "fetched", "retail_unverified"):
                         if k in p and not (k == "retail" and c.get("retail") is not None):
                             item[k] = p[k]
                 item["stale"] = True
                 report.append(f"FAIL   {c['id']}: {e}  (kept last good value)" if p else f"FAIL   {c['id']}: {e}  (no previous value)")
-        if item.get("ret") is None and item.get("mid") and item.get("retail"):
+        no_ret = item.get("retail_unverified") or item.get("retail_ambiguous")
+        if item.get("ret") is None and item.get("mid") and item.get("retail") and not no_ret:
             item["ret"] = round(item["mid"] / item["retail"], 4)
-        if item.get("ret") is None:
+        if no_ret:
+            item["ret"] = None
+        if item.get("ret") is None and not item.get("mid"):
             report.append(f"SKIP   {c['id']}: no price yet, left off the page")
             continue
         out_items.append(item)

@@ -1,0 +1,54 @@
+name: Weekly price refresh
+
+# Mondays 01:00 UTC = 09:00 Asia/Shanghai. Re-scrapes every automated item and commits
+# data.json + data/history.jsonl; GitHub Pages redeploys from main on the push.
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape
+        run: python -X utf8 scrape.py | tee run.txt || true
+
+      - name: Stop if the scrape was blocked
+        run: |
+          fails=$(grep -c '^FAIL' run.txt || true)
+          if [ "$fails" -gt 10 ]; then
+            echo "::error::$fails items failed to scrape; not committing. See the Scrape step."
+            exit 1
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898073+github-actions[bot]@users.noreply.github.com"
+          git add data.json data/history.jsonl
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Weekly data $(date -u +%F) from GitHub Actions"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Flag big moves for a manual look
+        run: |
+          if grep -q '^CHECK' run.txt; then
+            grep '^CHECK' run.txt | while read -r line; do echo "::warning::$line"; done
+            echo "::error::Some prices moved more than 40%. The data was committed; confirm these on the source pages."
+            exit 1
+          fi

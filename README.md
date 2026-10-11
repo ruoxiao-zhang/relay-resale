@@ -2,7 +2,7 @@
 
 A bilingual (English / 中文) ledger of pre-owned luxury prices in three sections: handbags, jewellery & watches, and ready-to-wear. For each item it shows retail, typical resale price, range, retention and, for scraped items, weekly price history.
 
-Live page: https://claude.ai/artifact/8s3Twh1ajkrEErnRqQsQ9A
+Live page: https://ruoxiao-zhang.github.io/relay-resale/ (updated every Monday by GitHub Actions)
 
 ## How it works
 
